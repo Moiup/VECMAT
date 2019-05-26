@@ -22,9 +22,20 @@ int main()
 
     GLKMatrix4 Mglk = GLKMatrix4MakeLookAt(EYE_X, EYE_Y, EYE_Z, C_X, C_Y, C_Z, U_X, U_Y, U_Z);
 
+    mat4 Mmat4;
+
+    mat4LookAt(EYE_X, EYE_Y, EYE_Z, C_X, C_Y, C_Z, U_X, U_Y, U_Z, Mmat4);
+
+    fprintf(stdout, "Apple Matrix\n");
     for (i = 0; i < 16; i += 4)
     {
         fprintf(stdout, "%f %f %f %f\n", Mglk.m[i], Mglk.m[i + 1], Mglk.m[i + 2], Mglk.m[i + 3]);
+    }
+
+    fprintf(stdout, "My Matrix\n");
+
+    for(i = 0; i < 4; i++){
+        fprintf(stdout, "%f %f %f %f\n", Mmat4[i][0], Mmat4[i][1], Mmat4[i][2], Mmat4[i][3]);
     }
 
     return 0;

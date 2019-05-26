@@ -11,4 +11,4 @@ vecteur.o:utilitaire.h vecteur.h vecteur.c
 	$(CC) $(FLAG) -c vecteur.c -o vecteur.o
 
 clean:
-	rm -rf *.o
+	rm -rf *.o test

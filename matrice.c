@@ -381,7 +381,7 @@ void mat4LookAtZ2(float Cx, float Cy, float Cz, float Tx, float Ty, float Tz, fl
  * Pour des renseignements :
  * http://ogldev.atspace.co.uk/www/tutorial13/tutorial13.html
 */
-void mat4LookAtZ3(float Cx, float Cy, float Cz, float Tx, float Ty, float Tz, float Ux, float Uy, float Uz, mat4 look)
+void mat4LookAt(float Cx, float Cy, float Cz, float Tx, float Ty, float Tz, float Ux, float Uy, float Uz, mat4 look)
 {
     vec3 f;
     vec3 l;
@@ -392,44 +392,32 @@ void mat4LookAtZ3(float Cx, float Cy, float Cz, float Tx, float Ty, float Tz, fl
     };
 
 
-    vec3CreateNormalized(Cx, Cy, Cz, Tx, Ty, Tz, f);
+    vec3CreateNormalized(Tx, Ty, Tz, Cx, Cy, Cz, f);
     vec3VecteurNormal(up, f, l);
     vec3Normalize(l);
     vec3VecteurNormal(f, l, u);
-/*
-    fprintf(stdout, "Cx %f, Cy %f, Cz %f\n", Cx, Cy, Cz);
-    fprintf(stdout, "Tx %f, Ty %f, Tz %f\n", Tx, Ty, Tz);
-    fprintf(stdout, "Ux %f, Uy %f, Uz %f\n", Ux, Uy, Uz);
-    
+
     fprintf(stdout, "l %f %f %f\n", l[0], l[1], l[2]);
     fprintf(stdout, "u %f %f %f\n", u[0], u[1], u[2]);
     fprintf(stdout, "f %f %f %f\n", f[0], f[1], f[2]);
-*/
+  
     look[0][0] = l[0];
-    look[0][1] = l[1];
-    look[0][2] = l[2];
-    look[0][3] = -l[0] * Cx - l[1] * Cy - l[2] * Cz;
+    look[1][0] = l[1];
+    look[2][0] = l[2];
+    look[3][0] = -l[0] * Cx - l[1] * Cy - l[2] * Cz;
 
-    look[1][0] = u[0];
+    look[0][1] = u[0];
     look[1][1] = u[1];
-    look[1][2] = u[2];
-    look[1][3] = -u[0] * Cx - u[1] * Cy - u[2] * Cz;
+    look[2][1] = u[2];
+    look[3][1] = -u[0] * Cx - u[1] * Cy - u[2] * Cz;
 
-    look[2][0] = f[0];
-    look[2][1] = f[1];
+    look[0][2] = f[0];
+    look[1][2] = f[1];
     look[2][2] = f[2];
-    look[2][3] = -f[0] * Cx - f[1] * Cy - f[2] * Cz;
+    look[3][2] = -f[0] * Cx - f[1] * Cy - f[2] * Cz;
 
-    look[3][0] = 0;
-    look[3][1] = 0;
-    look[3][2] = 0;
+    look[0][3] = 0;
+    look[1][3] = 0;
+    look[2][3] = 0;
     look[3][3] = 1;
-/*
-    fprintf(stdout, "Look :\n");
-    for(int i=0; i<4; i++){
-        for(int j=0; j<4; j++){
-            fprintf(stdout, "%f ", look[i][j]);
-        }
-        fprintf(stdout,"\n");
-    }*/
 }

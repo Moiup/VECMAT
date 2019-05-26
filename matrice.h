@@ -80,9 +80,9 @@ void mat4Translation(mat4 init, mat4 res, float x, float y, float z);
 /**
  * LookAt aligné sur Z
  * 
- * Look est la mtrice résultante
+ * Look est la matrice résultante
 */
-void mat4LookAtZ(float Cx, float Cy, float Cz, float Tx, float Ty, float Tz, float Ux, float Uy, float Uz, mat4 look);
+void mat4LookAt(float Cx, float Cy, float Cz, float Tx, float Ty, float Tz, float Ux, float Uy, float Uz, mat4 look);
 
 /**
  * La matrice de projection en perspective
