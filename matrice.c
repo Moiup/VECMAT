@@ -17,7 +17,18 @@
 /**
  * Met à 0 les valeurs de la matrice
 */
-void mat2Zero(mat2 m);
+void mat2Zero(mat2 m)
+{
+    m[0][0] = 0;
+    m[0][1] = 0;
+    m[0][2] = 0;
+    m[0][3] = 0;
+
+    m[1][0] = 0;
+    m[1][1] = 0;
+    m[1][2] = 0;
+    m[1][3] = 0;
+}
 
 /**
  * Multiplie de matrice de taille 2 et stocke le résultat dans res
@@ -28,7 +39,23 @@ void mat2Mult(mat2 m1, mat2 m2, mat2 res);
 /**
  *Met à 0 les valeurs de la matrice
 */
-void mat3Zero(mat3 m);
+void mat3Zero(mat3 m)
+{
+    m[0][0] = 0;
+    m[0][1] = 0;
+    m[0][2] = 0;
+    m[0][3] = 0;
+
+    m[1][0] = 0;
+    m[1][1] = 0;
+    m[1][2] = 0;
+    m[1][3] = 0;
+
+    m[2][0] = 0;
+    m[2][1] = 0;
+    m[2][2] = 0;
+    m[2][3] = 0;
+}
 
 /**
  * Multiplie de matrice de taille 3 et stocke le résultat dans res
@@ -39,35 +66,56 @@ void mat3Mult(mat2 m1, mat3 m2, mat3 res);
 /**
  * Met à 0 les valeurs de la matrice
 */
-void mat4Zero(mat4 v);
+void mat4Zero(mat4 m)
+{
+    m[0][0] = 0;
+    m[0][1] = 0;
+    m[0][2] = 0;
+    m[0][3] = 0;
+
+    m[1][0] = 0;
+    m[1][1] = 0;
+    m[1][2] = 0;
+    m[1][3] = 0;
+
+    m[2][0] = 0;
+    m[2][1] = 0;
+    m[2][2] = 0;
+    m[2][3] = 0;
+
+    m[3][0] = 0;
+    m[3][1] = 0;
+    m[3][2] = 0;
+    m[3][3] = 0;
+}
 
 /**
  * Initialise v en matrice identite
 */
-void mat4Identity(mat4 v){
-    v[0][0] = 1;
-    v[0][1] = 0;
-    v[0][2] = 0;
-    v[0][3] = 0;
+void mat4Identity(mat4 m){
+    m[0][0] = 1;
+    m[0][1] = 0;
+    m[0][2] = 0;
+    m[0][3] = 0;
 
-    v[1][0] = 0;
-    v[1][1] = 1;
-    v[1][2] = 0;
-    v[1][3] = 0;
+    m[1][0] = 0;
+    m[1][1] = 1;
+    m[1][2] = 0;
+    m[1][3] = 0;
 
-    v[2][0] = 0;
-    v[2][1] = 0;
-    v[2][2] = 1;
-    v[2][3] = 0;
+    m[2][0] = 0;
+    m[2][1] = 0;
+    m[2][2] = 1;
+    m[2][3] = 0;
 
-    v[3][0] = 0;
-    v[3][1] = 0;
-    v[3][2] = 0;
-    v[3][3] = 1;
+    m[3][0] = 0;
+    m[3][1] = 0;
+    m[3][2] = 0;
+    m[3][3] = 1;
 }
 
 /**
- * Multiplie de matrice de taille 4 et stocke le résultat dans res
+ * Multiplie deux matrice de taille 4 et stocke le résultat dans res
 */
 void mat4Mult(mat4 m1, mat4 m2, mat4 res)
 {
@@ -116,6 +164,8 @@ void mat4TranslationCreate(mat4 m, float x, float y, float z)
 
 /**
  * Effectue une translation
+ * 
+ * res : la matrice résultant de la translation de la matrice init
 */
 void mat4Translation(mat4 init, mat4 res, float x, float y, float z)
 {

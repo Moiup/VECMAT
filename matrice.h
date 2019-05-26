@@ -55,12 +55,12 @@ void mat3Mult(mat2 m1, mat3 m2, mat3 res);
 /**
  * Met à 0 les valeurs de la matrice
 */
-void mat4Zero(mat4 v);
+void mat4Zero(mat4 m);
 
 /**
  * Initialise v en matrice identite
 */
-void mat4Identity(mat4 v);
+void mat4Identity(mat4 m);
 
 /**
  * Multiplie de matrice de taille 4 et stocke le résultat dans res
