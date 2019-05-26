@@ -196,11 +196,7 @@ void mat4LookAt(float Cx, float Cy, float Cz, float Tx, float Ty, float Tz, floa
     vec3VecteurNormal(up, f, l);
     vec3Normalize(l);
     vec3VecteurNormal(f, l, u);
-/*
-    fprintf(stdout, "l %f %f %f\n", l[0], l[1], l[2]);
-    fprintf(stdout, "u %f %f %f\n", u[0], u[1], u[2]);
-    fprintf(stdout, "f %f %f %f\n", f[0], f[1], f[2]);
-  */
+
     look[0][0] = l[0];
     look[1][0] = l[1];
     look[2][0] = l[2];
