@@ -1,5 +1,5 @@
 /**
- * Name : vector2.h
+ * Name : VECMATVector2.h
  * 
  * 
  * Module for vector of size 2
@@ -7,8 +7,8 @@
  * Auteur : Mohammed-Bahsir Mahdi
  * 
 */
-#ifndef VECTOR2_H
-#define VECTOR2_H
+#ifndef VECMAT_VECTOR2_H
+#define VECMAT_VECTOR2_H
 #include "VECMATTools.h"
 
 #define VEC2_DIM 2  // The number of values
@@ -24,7 +24,7 @@ typedef float VECMATVector2[VEC2_DIM];
 
 
 /**************************************************/
-/* Les fonctions                                  */
+/* Functions                                      */
 /**************************************************/
 
 
@@ -39,7 +39,7 @@ void VECMATVector2Zero(VECMATVector2 v);
 void VECMATVector2Create(float p1X, float p1Y, float p2X, float p2Y, VECMATVector2 v);
 
 /**
- * Create a vec 2 already normalized (result in `v`)
+ * Create a vec2 already normalized (result in `v`)
 */
 void VECMATVector2CreateNormalized(float p1X, float p1Y, float p2X, float p2Y, VECMATVector2 v);
 

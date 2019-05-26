@@ -1,5 +1,5 @@
 /**
- * Name : vector2.c
+ * Name : VECMATVector2.c
  * 
  * 
  * Module for vector of size 2
@@ -34,8 +34,7 @@ void VECMATVector2CreateNormalized(float p1X, float p1Y, float p2X, float p2Y, V
 {
     float length;
 
-    v[VEC2_X] = p2X - p1X;
-    v[VEC2_Y] = p2Y - p1Y;
+    VECMATVector2Create(p1X, p1Y, p2X, p2Y, v);
 
     length = VECMATVector2Length(v);
 
