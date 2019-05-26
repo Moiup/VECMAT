@@ -140,88 +140,6 @@ void mat4Translation(mat4 init, mat4 res, float x, float y, float z)
     res[3][3] = 1;
 }
 
-/**
- * LookAt aligné sur Z
-*/
-void mat4LookAtZ(float Cx, float Cy, float Cz, float Tx, float Ty, float Tz, float Ux, float Uy, float Uz, mat4 look)
-{
-    vec4 v;
-
-    mat4 Rx;  // La matrice de rotation autour de l'axe des X
-    float h1; // L'hypothénuse pour la première rotation (cf cours)
-
-    mat4 Ry;  // La matrice de rotation autour de l'axe des Y
-    float h2; // L'hypothénuse pour la seconde rotation (cf cours)
-
-    // On crée le vecteur initial (celui de l'état actuel)
-    vec4Create(Cx, Cy, Cz, Tx, Ty, Tz, v);
-
-    // Calcul de la première matrice de rotation
-    h1 = sqrt(v[2] * v[2] + v[1] * v[1]);
-
-    Rx[0][0] = 1;
-    Rx[0][1] = 0;
-    Rx[0][2] = 0;
-    Rx[0][3] = 0;
-
-    Rx[1][0] = 0;
-    Rx[1][1] = v[2] / h1;
-    Rx[1][2] = -v[1] / h1;
-    Rx[1][3] = 0;
-
-    Rx[2][0] = 0;
-    Rx[2][1] = -Rx[1][2];
-    Rx[2][2] = Rx[1][1];
-    Rx[3][3] = 0;
-
-    Rx[3][0] = 0;
-    Rx[3][1] = 0;
-    Rx[3][2] = 0;
-    Rx[3][3] = 1;
-
-    // Calcul de la seconde matrice de rotation
-    h2 = sqrt(v[2] * v[2] + v[0] * v[0]);
-
-    Ry[0][0] = v[2] / h2;
-    Ry[0][1] = 0;
-    Ry[0][2] = v[0] / h2;
-    Ry[0][3] = 0;
-
-    Ry[1][0] = 0;
-    Ry[1][1] = 1;
-    Ry[1][2] = 0;
-    Ry[1][3] = 0;
-
-    Ry[2][0] = -Ry[0][2];
-    Ry[2][1] = 0;
-    Ry[2][2] = Ry[0][0];
-    Ry[3][3] = 0;
-
-    Ry[3][0] = 0;
-    Ry[3][1] = 0;
-    Ry[3][2] = 0;
-    Ry[3][3] = 1;
-
-    look[0][0] = Ry[0][0];
-    look[0][1] = Ry[0][2] * Rx[2][1];
-    look[0][2] = Ry[0][2] * Rx[2][2];
-    look[0][3] = -look[0][0] * Cx - look[0][1] * Cy - look[0][2] * Cz;
-
-    look[1][0] = 0;
-    look[1][1] = Rx[1][1];
-    look[1][2] = Rx[1][2];
-    look[1][3] = -look[1][0] * Cx - look[1][1] * Cy - look[1][2] * Cz;
-
-    look[2][0] = Ry[2][0];
-    look[2][1] = Ry[2][2] * Rx[2][1];
-    look[2][2] = Ry[2][2] * Rx[2][2];
-    look[2][3] = -look[2][0] * Cx - look[2][1] * Cy - look[2][2] * Cz;
-
-    look[3][0] = 0;
-    look[3][1] = 0;
-    look[3][2] = 0;
-    look[3][3] = 1;
-}
 
 /**
  * La matrice de projection en perspective
@@ -256,127 +174,7 @@ void mat4ProjectionPerspective(float ratio, float angle, float Znear, float Zfar
     projection[3][3] = 0.0f;
 }
 
-/**
- * LookAt aligné sur Z
-*/
-void mat4LookAtZ2(float Cx, float Cy, float Cz, float Tx, float Ty, float Tz, float Ux, float Uy, float Uz, mat4 look)
-{
-    vec4 v;
 
-    mat4 Rx;  // La matrice de rotation autour de l'axe des X
-    float h1; // L'hypothénuse pour la première rotation (cf cours)
-
-    mat4 Ry;  // La matrice de rotation autour de l'axe des Y
-    float h2; // L'hypothénuse pour la seconde rotation (cf cours)
-
-    // On crée le vecteur initial (celui de l'état actuel)
-    fprintf(stdout, "Cx %f, Cy %f, Cz %f\n", Cx, Cy, Cz);
-    vec4Create(Cx, Cy, Cz, Tx, Ty, Tz, v);
-    fprintf(stdout, "v : %f %f %f %f\n", v[0], v[1], v[2], v[3]);
-
-    // Calcul de la première matrice de rotation
-    h1 = sqrt(v[2] * v[2] + v[1] * v[1]);
-
-    Rx[0][0] = 1;
-    Rx[0][1] = 0;
-    Rx[0][2] = 0;
-    Rx[0][3] = 0;
-
-    Rx[1][0] = 0;
-    Rx[1][1] = v[2] / h1;
-    Rx[1][2] = -v[1] / h1;
-    Rx[1][3] = 0;
-
-    Rx[2][0] = 0;
-    Rx[2][1] = -Rx[1][2];
-    Rx[2][2] = Rx[1][1];
-    Rx[3][3] = 0;
-
-    Rx[3][0] = 0;
-    Rx[3][1] = 0;
-    Rx[3][2] = 0;
-    Rx[3][3] = 1;
-
-    fprintf(stdout, "Rx\n");
-    for (int i = 0; i < 4; i++)
-    {
-        for (int j = 0; j < 4; j++)
-        {
-            fprintf(stdout, "%f ", Rx[i][j]);
-        }
-        fprintf(stdout, "\n");
-    }
-    fprintf(stdout, "\n");
-
-    // Calcul de la seconde matrice de rotation
-    h2 = sqrt(v[2] * v[2] + v[0] * v[0]);
-
-    Ry[0][0] = v[2] / h2;
-    Ry[0][1] = 0;
-    Ry[0][2] = v[0] / h2;
-    Ry[0][3] = 0;
-
-    Ry[1][0] = 0;
-    Ry[1][1] = 1;
-    Ry[1][2] = 0;
-    Ry[1][3] = 0;
-
-    Ry[2][0] = -Ry[0][2];
-    Ry[2][1] = 0;
-    Ry[2][2] = Ry[0][0];
-    Ry[3][3] = 0;
-
-    Ry[3][0] = 0;
-    Ry[3][1] = 0;
-    Ry[3][2] = 0;
-    Ry[3][3] = 1;
-
-    fprintf(stdout, "Ry\n");
-    for (int i = 0; i < 4; i++)
-    {
-        for (int j = 0; j < 4; j++)
-        {
-            fprintf(stdout, "%f ", Ry[i][j]);
-        }
-        fprintf(stdout, "\n");
-    }
-    fprintf(stdout, "\n");
-
-    mat4 mul;
-
-    mat4Mult(Ry, Rx, mul);
-
-    fprintf(stdout, "Ry * Rx\n");
-    for (int i = 0; i < 4; i++)
-    {
-        for (int j = 0; j < 4; j++)
-        {
-            fprintf(stdout, "%f ", mul[i][j]);
-        }
-        fprintf(stdout, "\n");
-    }
-    fprintf(stdout, "\n");
-
-    look[0][0] = Ry[0][0];
-    look[0][1] = Ry[0][2] * Rx[2][1];
-    look[0][2] = Ry[0][2] * Rx[2][2];
-    look[0][3] = -look[0][0] * Cx - look[0][1] * Cy - look[0][2] * Cz;
-
-    look[1][0] = 0;
-    look[1][1] = Rx[1][1];
-    look[1][2] = Rx[1][2];
-    look[1][3] = -look[1][0] * Cx - look[1][1] * Cy - look[1][2] * Cz;
-
-    look[2][0] = Ry[2][0];
-    look[2][1] = Ry[2][2] * Rx[2][1];
-    look[2][2] = Ry[2][2] * Rx[2][2];
-    look[2][3] = -look[2][0] * Cx - look[2][1] * Cy - look[2][2] * Cz;
-
-    look[3][0] = 0;
-    look[3][1] = 0;
-    look[3][2] = 0;
-    look[3][3] = 1;
-}
 
 /**
  *
@@ -398,11 +196,11 @@ void mat4LookAt(float Cx, float Cy, float Cz, float Tx, float Ty, float Tz, floa
     vec3VecteurNormal(up, f, l);
     vec3Normalize(l);
     vec3VecteurNormal(f, l, u);
-
+/*
     fprintf(stdout, "l %f %f %f\n", l[0], l[1], l[2]);
     fprintf(stdout, "u %f %f %f\n", u[0], u[1], u[2]);
     fprintf(stdout, "f %f %f %f\n", f[0], f[1], f[2]);
-  
+  */
     look[0][0] = l[0];
     look[1][0] = l[1];
     look[2][0] = l[2];
