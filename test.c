@@ -1,42 +1,43 @@
+#include "matrice.h"
+#include "vecteur.h"
+#include "utilitaire.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <GLKit/GLKMath.h>
-#include "vecteur.h"
-#include "matrice.h"
 
-#define EYE_X 0.0f
-#define EYE_Y 0.0f
-#define EYE_Z 2.3f
+#define SCREEN_W 1600
+#define SCREEN_H 900
+#define TO_RAD(a) ((a) * M_PI / 180)
 
-#define C_X 2.0f
-#define C_Y 3.2f
-#define C_Z 5.0f
+#define ANGLE 32.0f
 
-#define U_X 0.0f
-#define U_Y 1.0f
-#define U_Z 0.0f
+int main(){
 
-int main()
-{
-    int i;
-
-    GLKMatrix4 Mglk = GLKMatrix4MakeLookAt(EYE_X, EYE_Y, EYE_Z, C_X, C_Y, C_Z, U_X, U_Y, U_Z);
+    float fov = TO_RAD(ANGLE);
+    float aspectRatio = SCREEN_W / SCREEN_H;
+    float nearZ = 19.1f;
+    float farZ = 100.0f;
 
     mat4 Mmat4;
 
-    mat4LookAt(EYE_X, EYE_Y, EYE_Z, C_X, C_Y, C_Z, U_X, U_Y, U_Z, Mmat4);
+    mat4ProjectionPerspective(aspectRatio, ANGLE, nearZ, farZ, Mmat4);
 
-    fprintf(stdout, "Apple Matrix\n");
-    for (i = 0; i < 16; i += 4)
+    GLKMatrix4 Mglk = GLKMatrix4MakePerspective(fov, aspectRatio, nearZ, farZ);
+
+    fprintf(stdout, "TO RAD %f\n", fov);
+
+    fprintf(stdout, "Matrices GLK\n");
+    for(int i = 0; i < 16; i += 4)
     {
         fprintf(stdout, "%f %f %f %f\n", Mglk.m[i], Mglk.m[i + 1], Mglk.m[i + 2], Mglk.m[i + 3]);
     }
 
-    fprintf(stdout, "My Matrix\n");
-
-    for(i = 0; i < 4; i++){
+    fprintf(stdout, "Matrices mat4\n");
+    for(int i = 0; i < 4; i++)
+    {
         fprintf(stdout, "%f %f %f %f\n", Mmat4[i][0], Mmat4[i][1], Mmat4[i][2], Mmat4[i][3]);
     }
+
 
     return 0;
 }
