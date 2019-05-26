@@ -144,6 +144,8 @@ void mat4Translation(mat4 init, mat4 res, float x, float y, float z)
 
 /**
  * La matrice de projection en perspective
+ * 
+ * Angle : en degré
 */
 void mat4ProjectionPerspective(float ratio, float angle, float Znear, float Zfar, mat4 projection)
 {
@@ -153,23 +155,23 @@ void mat4ProjectionPerspective(float ratio, float angle, float Znear, float Zfar
     tanedAngle = tan(rad_angle / 2);
 
     projection[0][0] = 1.0f / (ratio * tanedAngle);
-    projection[0][1] = 0.0f;
-    projection[0][2] = 0.0f;
-    projection[0][3] = 0.0f;
-
     projection[1][0] = 0.0f;
-    projection[1][1] = 1 / tanedAngle;
-    projection[1][2] = 0.0f;
-    projection[1][3] = 0.0f;
-
     projection[2][0] = 0.0f;
-    projection[2][1] = 0.0f;
-    projection[2][2] = (-Znear - Zfar) / (Znear - Zfar);
-    projection[2][3] = (2 * Zfar * Znear) / (Znear - Zfar);
-
     projection[3][0] = 0.0f;
+
+    projection[0][1] = 0.0f;
+    projection[1][1] = 1 / tanedAngle;
+    projection[2][1] = 0.0f;
     projection[3][1] = 0.0f;
-    projection[3][2] = 1.0f;
+
+    projection[0][2] = 0.0f;
+    projection[1][2] = 0.0f;
+    projection[2][2] = (Znear + Zfar) / (Znear - Zfar);
+    projection[3][2] = (2 * Zfar * Znear) / (Znear - Zfar);
+
+    projection[0][3] = 0.0f;
+    projection[1][3] = 0.0f;
+    projection[2][3] = -1.0f;
     projection[3][3] = 0.0f;
 }
 
