@@ -22,7 +22,7 @@ void VECMATVector2Zero(VECMATVector2 v)
 /**
  * Create a vector made of the coordinate given
 */
-void VECMATVector2Define(VECMATVector3 v, float x, float y)
+void VECMATVector2Define(VECMATVector2 v, float x, float y)
 {
     v[VEC2_X] = x;
     v[VEC2_Y] = y;

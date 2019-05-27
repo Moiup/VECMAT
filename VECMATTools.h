@@ -12,6 +12,8 @@
 #include <stdio.h>
 #include <math.h>
 
+#define HOMOGENEOUS_VAL 1   // The homogenous value (for matrixes and vectrs)
+
 
 
 #endif

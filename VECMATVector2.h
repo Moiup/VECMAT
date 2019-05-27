@@ -4,7 +4,7 @@
  * 
  * Module for vector of size 2
  * 
- * Auteur : Mohammed-Bahsir Mahdi
+ * Author : Mohammed-Bahsir Mahdi
  * 
 */
 #ifndef VECMAT_VECTOR2_H
@@ -36,7 +36,7 @@ void VECMATVector2Zero(VECMATVector2 v);
 /**
  * Create a vector made of the coordinate given
 */
-void VECMATVector2Define(VECMATVector3 v, float x, float y);
+void VECMATVector2Define(VECMATVector2 v, float x, float y);
 
 /**
  * Create a vec2 (result is in `v`)

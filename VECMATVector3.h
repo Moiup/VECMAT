@@ -4,7 +4,7 @@
  * 
  * Module for vector of size 3
  * 
- * Auteur : Mohammed-Bahsir Mahdi
+ * Author : Mohammed-Bahsir Mahdi
  * 
 */
 #ifndef VECMAT_VECTOR3_H
@@ -14,7 +14,7 @@
 #define VEC3_DIM 3  // The number of values
 #define VEC3_X 0    // Access the X value
 #define VEC3_Y 1    // Access the Y value
-#define VEC3_Z 2    // Access the Y value
+#define VEC3_Z 2    // Access the Z value
 
 
 /***********************************************/
