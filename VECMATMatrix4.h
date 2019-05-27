@@ -1,5 +1,5 @@
 /**
- * Name : VECMATMatrix.h
+ * Name : VECMATMatrix4.h
  * 
  * 
  * Module of Matrix of size 4

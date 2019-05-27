@@ -1,5 +1,5 @@
 /**
- * Name : VECMATMatrix.c
+ * Name : VECMATMatrix4.c
  * 
  * 
  * Module of Matrix of size 4
@@ -45,7 +45,7 @@ void VECMATMatrix4Identity(VECMATMatrix4 m){
     m[0][1] = 0;
     m[0][2] = 0;
     m[0][3] = 0;
-    // Secnd line
+    // Second line
     m[1][0] = 0;
     m[1][1] = 1;
     m[1][2] = 0;
@@ -72,7 +72,7 @@ void VECMATMatrix4Sum(VECMATMatrix4 m1, VECMATMatrix4 m2, VECMATMatrix4 res)
     res[0][1] = m1[0][1] + m2[0][1];
     res[0][2] = m1[0][2] + m2[0][2];
     res[0][3] = m1[0][3] + m2[0][3];
-    // Seconde line
+    // Second line
     res[1][0] = m1[1][0] + m2[1][0];
     res[1][1] = m1[1][1] + m2[1][1];
     res[1][2] = m1[1][2] + m2[1][2];
@@ -119,7 +119,7 @@ void VECMATMatrix4Mult(VECMATMatrix4 m1, VECMATMatrix4 m2, VECMATMatrix4 res)
     res[0][1] = m1[0][0] * m2[0][1] + m1[0][1] * m2[1][1] + m1[0][2] * m2[2][1] + m1[0][3] * m2[3][1];
     res[0][2] = m1[0][0] * m2[0][2] + m1[0][1] * m2[1][2] + m1[0][2] * m2[2][2] + m1[0][3] * m2[3][2];
     res[0][3] = m1[0][0] * m2[0][3] + m1[0][1] * m2[1][3] + m1[0][2] * m2[2][3] + m1[0][3] * m2[3][3];
-    // Seconde line
+    // Second line
     res[1][0] = m1[1][0] * m2[0][0] + m1[1][1] * m2[1][0] + m1[1][2] * m2[2][0] + m1[1][3] * m2[3][0];
     res[1][1] = m1[1][0] * m2[0][1] + m1[1][1] * m2[1][1] + m1[1][2] * m2[2][1] + m1[1][3] * m2[3][1];
     res[1][2] = m1[1][0] * m2[0][2] + m1[1][1] * m2[1][2] + m1[1][2] * m2[2][2] + m1[1][3] * m2[3][2];
