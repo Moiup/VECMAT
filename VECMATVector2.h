@@ -36,7 +36,7 @@ void VECMATVector2Zero(VECMATVector2 v);
 /**
  * Create a vector made of the coordinate given
 */
-void VECMATVector3Define(VECMATVector3 v, float x, float y);
+void VECMATVector2Define(VECMATVector3 v, float x, float y);
 
 /**
  * Create a vec2 (result is in `v`)
