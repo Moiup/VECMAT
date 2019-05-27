@@ -18,6 +18,16 @@ void VECMATVector2Zero(VECMATVector2 v)
     v[VEC2_Y] = 0;
 }
 
+
+/**
+ * Create a vector made of the coordinate given
+*/
+void VECMATVector2Define(VECMATVector3 v, float x, float y)
+{
+    v[VEC2_X] = x;
+    v[VEC2_Y] = y;
+}
+
 /**
  * Create a vec2 (result is in `v`)
 */

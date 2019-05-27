@@ -33,6 +33,11 @@ typedef float VECMATVector3[VEC3_DIM];
 void VECMATVector3Zero(VECMATVector3 v);
 
 /**
+ * Create a vector made of the coordinate given
+*/
+void VECMATVector3Define(VECMATVector3 v, float x, float y, float z);
+
+/**
  * Create a vec3 (result is in `v`)
 */
 void VECMATVector3Create(float p1X, float p1Y, float p1Z, float p2X, float p2Y, float p2Z, VECMATVector3 v);
