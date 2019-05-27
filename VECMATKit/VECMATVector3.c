@@ -79,7 +79,7 @@ float VECMATVector3Length(VECMATVector3 v)
 /**
  * Put in `vn` the orthogonal vector to the plan formed with `v1` and `v2`
 */
-void VECMATVector3VecteurNormal(VECMATVector3 v1, VECMATVector3 v2, VECMATVector3 vn){
+void VECMATVector3NormalVector(VECMATVector3 v1, VECMATVector3 v2, VECMATVector3 vn){
     vn[VEC3_X] = v1[VEC3_Y] * v2[VEC3_Z] - v1[VEC3_Z] * v2[VEC3_Y];
     vn[VEC3_Y] = v1[VEC3_Z] * v2[VEC3_X] - v1[VEC3_X] * v2[VEC3_Z];
     vn[VEC3_Z] = v1[VEC3_X] * v2[VEC3_Y] - v1[VEC3_Y] * v2[VEC3_X];
