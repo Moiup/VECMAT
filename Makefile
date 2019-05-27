@@ -1,7 +1,10 @@
 CC=gcc
 FLAG=-Wall
 
-all:VECMATVector2.o VECMATVector3.o VECMATVector4.o
+all:VECMATVector2.o VECMATVector3.o VECMATVector4.o VECMATMatrix4.o
+
+VECMATMatrix4.o:VECMATTools.h VECMATMatrix4.h VECMATMatrix4.c
+	$(CC) $(FLAG) -c VECMATMatrix4.c -o VECMATMatrix4.o
 
 VECMATVector4.o:VECMATTools.h VECMATVector4.h VECMATVector4.c
 	$(CC) $(FLAG) -c VECMATVector4.c -o VECMATVector4.o

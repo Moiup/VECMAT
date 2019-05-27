@@ -1,145 +1,10 @@
-/**
- * Nom : matrice.c
- * 
- * 
- * Module de matrice
- * 
- * Auteur : Mohammed-Bahsir Mahdi
- * 
-*/
-#include "matrice.h"
-#include <stdio.h>
-/**************************************************/
-/* Les fonctions associées à chacune des matrices */
-/**************************************************/
 
-// Pour la matrice 2
-/**
- * Met à 0 les valeurs de la matrice
-*/
-void mat2Zero(mat2 m)
-{
-    m[0][0] = 0;
-    m[0][1] = 0;
-    m[0][2] = 0;
-    m[0][3] = 0;
 
-    m[1][0] = 0;
-    m[1][1] = 0;
-    m[1][2] = 0;
-    m[1][3] = 0;
-}
-
-/**
- * Multiplie de matrice de taille 2 et stocke le résultat dans res
-*/
-void mat2Mult(mat2 m1, mat2 m2, mat2 res);
-
-// Pour le vecteur 3
-/**
- *Met à 0 les valeurs de la matrice
-*/
-void mat3Zero(mat3 m)
-{
-    m[0][0] = 0;
-    m[0][1] = 0;
-    m[0][2] = 0;
-    m[0][3] = 0;
-
-    m[1][0] = 0;
-    m[1][1] = 0;
-    m[1][2] = 0;
-    m[1][3] = 0;
-
-    m[2][0] = 0;
-    m[2][1] = 0;
-    m[2][2] = 0;
-    m[2][3] = 0;
-}
-
-/**
- * Multiplie de matrice de taille 3 et stocke le résultat dans res
-*/
-void mat3Mult(mat2 m1, mat3 m2, mat3 res);
-
-// Pour la matrice 4
-/**
- * Met à 0 les valeurs de la matrice
-*/
-void mat4Zero(mat4 m)
-{
-    m[0][0] = 0;
-    m[0][1] = 0;
-    m[0][2] = 0;
-    m[0][3] = 0;
-
-    m[1][0] = 0;
-    m[1][1] = 0;
-    m[1][2] = 0;
-    m[1][3] = 0;
-
-    m[2][0] = 0;
-    m[2][1] = 0;
-    m[2][2] = 0;
-    m[2][3] = 0;
-
-    m[3][0] = 0;
-    m[3][1] = 0;
-    m[3][2] = 0;
-    m[3][3] = 0;
-}
-
-/**
- * Initialise v en matrice identite
-*/
-void mat4Identity(mat4 m){
-    m[0][0] = 1;
-    m[0][1] = 0;
-    m[0][2] = 0;
-    m[0][3] = 0;
-
-    m[1][0] = 0;
-    m[1][1] = 1;
-    m[1][2] = 0;
-    m[1][3] = 0;
-
-    m[2][0] = 0;
-    m[2][1] = 0;
-    m[2][2] = 1;
-    m[2][3] = 0;
-
-    m[3][0] = 0;
-    m[3][1] = 0;
-    m[3][2] = 0;
-    m[3][3] = 1;
-}
-
-/**
- * Multiplie deux matrice de taille 4 et stocke le résultat dans res
-*/
-void mat4Mult(mat4 m1, mat4 m2, mat4 res)
-{
-    int i;
-    int j;
-    int k;
-
-    for (i = 0; i < 4; i++)
-    {
-        for (j = 0; j < 4; j++)
-        {
-            res[i][j] = 0;
-            for (k = 0; k < 4; k++)
-            {
-                res[i][j] += m1[i][k] * m2[k][j];
-            }
-        }
-    }
-}
 
 /**
  * Crée la matrice translation
 */
-void mat4TranslationCreate(mat4 m, float x, float y, float z)
+void VECMATMatrix4TranslationCreate(VECMATMatrix4 m, float x, float y, float z)
 {
     m[0][0] = 1;
     m[0][1] = 0;
@@ -167,7 +32,7 @@ void mat4TranslationCreate(mat4 m, float x, float y, float z)
  * 
  * res : la matrice résultant de la translation de la matrice init
 */
-void mat4Translation(mat4 init, mat4 res, float x, float y, float z)
+void VECMATMatrix4Translation(VECMATMatrix4 init, VECMATMatrix4 res, float x, float y, float z)
 {
     res[0][0] = init[0][0] + init[3][0] * x;
     res[0][1] = init[0][1] + init[3][1] * x;
@@ -196,7 +61,7 @@ void mat4Translation(mat4 init, mat4 res, float x, float y, float z)
  * 
  * Angle : en degré
 */
-void mat4ProjectionPerspective(float ratio, float angle, float Znear, float Zfar, mat4 projection)
+void VECMATMatrix4ProjectionPerspective(float ratio, float angle, float Znear, float Zfar, VECMATMatrix4 projection)
 {
     float tanedAngle;
     float rad_angle = (angle * M_PI / 180);
@@ -230,7 +95,7 @@ void mat4ProjectionPerspective(float ratio, float angle, float Znear, float Zfar
  * Pour des renseignements :
  * http://ogldev.atspace.co.uk/www/tutorial13/tutorial13.html
 */
-void mat4LookAt(float Cx, float Cy, float Cz, float Tx, float Ty, float Tz, float Ux, float Uy, float Uz, mat4 look)
+void VECMATMatrix4LookAt(float Cx, float Cy, float Cz, float Tx, float Ty, float Tz, float Ux, float Uy, float Uz, VECMATMatrix4 look)
 {
     vec3 f;
     vec3 l;
@@ -264,5 +129,5 @@ void mat4LookAt(float Cx, float Cy, float Cz, float Tx, float Ty, float Tz, floa
     look[0][3] = 0;
     look[1][3] = 0;
     look[2][3] = 0;
-    look[3][3] = HOMOGENEOUS_VAL;
+    look[3][3] = 1;
 }
