@@ -23,12 +23,12 @@
 /**
  * Create the translation matrix (result in m)
 */
-void VECMATMatrix4CreateTranslation(VECMATMatrix4 m, float x, float y, float z);
+void VECMATMatrix4CreateTranslation(VECMATMatrix4 m, float tx, float ty, float tz);
 
 /**
 * Translate the matris `init` (resultint matrix in res)
 */
-void VECMATMatrix4MakeTranslation(VECMATMatrix4 init, VECMATMatrix4 res, float x, float y, float z);
+void VECMATMatrix4MakeTranslation(VECMATMatrix4 init, VECMATMatrix4 res, float tx, float ty, float tz);
 
 /**
  * Put in `projection` the matrix of the Perspective projection

@@ -10,6 +10,10 @@
 #include "VECMATMatrix4.h"
 
 /**
+ * 
+*/
+
+/**
  * Set to 0 all of the matrix values
 */
 void VECMATMatrix4Zero(VECMATMatrix4 m)

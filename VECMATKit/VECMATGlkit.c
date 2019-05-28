@@ -12,55 +12,55 @@
 /**
  * Create the translation matrix (result in m)
 */
-void VECMATMatrix4CreateTranslation(VECMATMatrix4 m, float x, float y, float z)
+void VECMATMatrix4CreateTranslation(VECMATMatrix4 m, float tx, float ty, float tz)
 {
     // First line
     m[0][0] = 1;
     m[0][1] = 0;
     m[0][2] = 0;
-    m[0][3] = x;
+    m[0][3] = 0;
     // Second line
     m[1][0] = 0;
     m[1][1] = 1;
     m[1][2] = 0;
-    m[1][3] = y;
+    m[1][3] = 0;
     // Third line
     m[2][0] = 0;
     m[2][1] = 0;
     m[2][2] = 1;
-    m[2][3] = z;
+    m[2][3] = 0;
     // Fourth line
-    m[3][0] = 0;
-    m[3][1] = 0;
-    m[3][2] = 0;
+    m[3][0] = tx;
+    m[3][1] = ty;
+    m[3][2] = tz;
     m[3][3] = 1;
 }
 
 /**
 * Translate the matris `init` (resultint matrix in res)
 */
-void VECMATMatrix4MakeTranslation(VECMATMatrix4 init, VECMATMatrix4 res, float x, float y, float z)
+void VECMATMatrix4MakeTranslation(VECMATMatrix4 init, VECMATMatrix4 res, float tx, float ty, float tz)
 {
     // First line
-    res[0][0] = init[0][0] + init[3][0] * x;
-    res[0][1] = init[0][1] + init[3][1] * x;
-    res[0][2] = init[0][2] + init[3][2] * x;
-    res[0][3] = init[0][3] + init[3][3] * x;
+    res[0][0] = init[0][0] + init[0][3] * tx;
+    res[0][1] = init[0][1] + init[0][3] * ty;
+    res[0][2] = init[0][2] + init[0][3] * tz;
+    res[0][3] = init[0][3];
     // Second line
-    res[1][0] = init[1][0] + init[3][0] * y;
-    res[1][1] = init[1][1] + init[3][1] * y;
-    res[1][2] = init[1][2] + init[3][2] * y;
-    res[1][3] = init[1][3] + init[3][3] * y;
+    res[1][0] = init[1][0] + init[1][3] * tx;
+    res[1][1] = init[1][1] + init[1][3] * ty;
+    res[1][2] = init[1][2] + init[1][3] * tz;
+    res[1][3] = init[1][3];
     // Third line
-    res[2][0] = init[2][0] + init[3][0] * z;
-    res[2][1] = init[2][1] + init[3][1] * z;
-    res[2][2] = init[2][2] + init[3][2] * z;
-    res[2][3] = init[2][3] + init[3][3] * z;
+    res[2][0] = init[2][0] + init[2][3] * tx;
+    res[2][1] = init[2][1] + init[2][3] * ty;
+    res[2][2] = init[2][2] + init[2][3] * tz;
+    res[2][3] = init[2][3];
     // Fourth line
-    res[3][0] = 0;
-    res[3][1] = 0;
-    res[3][2] = 0;
-    res[3][3] = 1;
+    res[3][0] = init[3][0] + init[3][3] * tx;
+    res[3][1] = init[3][1] + init[3][3] * ty;
+    res[3][2] = init[3][2] + init[3][3] * tz;
+    res[3][3] = init[3][3];
 }
 
 
