@@ -102,6 +102,11 @@ void VECMATVector4CrossProduct(VECMATVector4 v1, VECMATVector4 v2, VECMATVector4
 
 /**
  * Sum of two vectors (result in res)
+ * 
+ * If you don't want to store the result in a new vector, call the function like this :
+ *      VECMATVector4Sum(v1, v2, v1);
+ * or
+ *      VECMATVector4Sum(v1, v2, v2);
 */
 void VECMATVector4Sum(VECMATVector4 v1, VECMATVector4 v2, VECMATVector4 res)
 {
@@ -115,6 +120,13 @@ void VECMATVector4Sum(VECMATVector4 v1, VECMATVector4 v2, VECMATVector4 res)
  * Substraction of two vectors (result in res)
  * 
  * v1 - v2
+ * 
+ * 
+ * If you don't want to store the result in a new vector, call the function like this :
+ *      VECMATVector4Sub(v1, v2, v1);
+ * or
+ *      VECMATVector4Sub(v1, v2, v2);
+ * 
 */
 void VECMATVector4Sub(VECMATVector4 v1, VECMATVector4 v2, VECMATVector4 res)
 {
