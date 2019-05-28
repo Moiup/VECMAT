@@ -37,7 +37,7 @@ void VECMATMatrix4CreateTranslation(VECMATMatrix4 m, float tx, float ty, float t
 }
 
 /**
-* Translate the matris `init` (resultint matrix in res)
+* Translate the matris `init` (result in matrix in res)
 */
 void VECMATMatrix4MakeTranslation(VECMATMatrix4 init, VECMATMatrix4 res, float tx, float ty, float tz)
 {
@@ -63,6 +63,59 @@ void VECMATMatrix4MakeTranslation(VECMATMatrix4 init, VECMATMatrix4 res, float t
     res[3][3] = init[3][3];
 }
 
+/**
+ * Create the scaling matrix
+*/
+void VECMATMatrix4CreateScale(VECMATMatrix4 m, float Sx, float Sy, float Sz)
+{
+    // First line
+    m[0][0] = Sx;
+    m[0][1] = 0;
+    m[0][2] = 0;
+    m[0][3] = 0;
+    // Second line
+    m[1][0] = 0;
+    m[1][1] = Sy;
+    m[1][2] = 0;
+    m[1][3] = 0;
+    // Thirld line
+    m[2][0] = 0;
+    m[2][1] = 0;
+    m[2][2] = Sz;
+    m[2][3] = 0;
+    // Fourth line
+    m[3][0] = 0;
+    m[3][1] = 0;
+    m[3][2] = 0;
+    m[3][3] = 1;
+}
+
+/**
+* Scale the matrix `init` (result in matrix in res)
+*/
+void VECMATMatrix4MakeScale(VECMATMatrix4 init, VECMATMatrix4 res, float Sx, float Sy, float Sz)
+{
+    // First line
+    res[0][0] = init[0][0] * Sx;
+    res[0][1] = init[0][1] * Sy;
+    res[0][2] = init[0][2] * Sz;
+    res[0][3] = init[0][3];
+    // Second line
+    res[1][0] = init[1][0] * Sx;
+    res[1][1] = init[1][1] * Sy;
+    res[1][2] = init[1][2] * Sz;
+    res[1][3] = init[1][3];
+    // Thirld line
+    res[2][0] = init[2][0] * Sx;
+    res[2][1] = init[2][1] * Sy;
+    res[2][2] = init[2][2] * Sz;
+    res[2][3] = init[2][3];
+    // Fourth line
+    res[3][0] = init[3][0] * Sx;
+    res[3][1] = init[3][1] * Sx;
+    res[3][2] = init[3][2] * Sx;
+    res[3][3] = init[3][3];
+}
 
 /**
  * Put in `projection` the matrix of the Perspective projection

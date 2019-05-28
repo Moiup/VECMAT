@@ -13,7 +13,8 @@ int main()
         );
     */
 
-    GLKMatrix4 m = GLKMatrix4MakeYRotation(0.38f);
+    //GLKMatrix4 m = GLKMatrix4MakeYRotation(0.38f);
+    //GLKMatrix4 m = GLKMatrix4MakeScale(7, 8, 9);
 /*
     GLKMatrix4 m = GLKMatrix4Make(
             1,// 00

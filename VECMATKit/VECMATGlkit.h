@@ -26,9 +26,14 @@
 void VECMATMatrix4CreateTranslation(VECMATMatrix4 m, float tx, float ty, float tz);
 
 /**
-* Translate the matris `init` (resultint matrix in res)
+* Translate the matris `init` (result in matrix in res)
 */
 void VECMATMatrix4MakeTranslation(VECMATMatrix4 init, VECMATMatrix4 res, float tx, float ty, float tz);
+
+/**
+ * Create the scaling matrix
+*/
+void VECMATMatrix4CreateScale(VECMATMatrix4 m, float Sx, float Sy, float Sz);
 
 /**
  * Put in `projection` the matrix of the Perspective projection
