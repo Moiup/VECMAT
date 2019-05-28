@@ -24,6 +24,11 @@ typedef float VECMATMatrix2[MAT2_DIM][MAT2_DIM];
 /**************************************************/
 
 /**
+ * Create a matrix with the value given
+*/
+void VECMATMatrix2CreateMatrix(VECMATMatrix2 m, float m00, float m01, float m10, float m11);
+
+/**
  * Set to 0 all of the matrix values
 */
 void VECMATMatrix2Zero(VECMATMatrix2 m);

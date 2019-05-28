@@ -10,6 +10,25 @@
 #include "VECMATMatrix3.h"
 
 /**
+ * Create a matrix with the value given
+*/
+void VECMATMatrix3CreateMatrix(VECMATMatrix3 m, float m00, float m01, float m02, float m10, float m11, float m12, float m20, float m21, float m22)
+{
+    // First line
+    m[0][0] = m00;
+    m[0][1] = m01;
+    m[0][2] = m02;
+    // Second line
+    m[1][0] = m10;
+    m[1][1] = m11;
+    m[1][2] = m12;
+    // Third line
+    m[2][0] = m20;
+    m[2][1] = m21;
+    m[2][2] = m22;
+}
+
+/**
  * Set to 0 all of the matrix values
 */
 void VECMATMatrix3Zero(VECMATMatrix3 m)

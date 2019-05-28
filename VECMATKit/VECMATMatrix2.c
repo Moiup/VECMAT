@@ -10,6 +10,19 @@
 #include "VECMATMatrix2.h"
 
 /**
+ * Create a matrix with the value given
+*/
+void VECMATMatrix2CreateMatrix(VECMATMatrix2 m, float m00, float m01, float m10, float m11)
+{
+    // First line
+    m[0][0] = m00;
+    m[0][1] = m01;
+    // Second line
+    m[1][0] = m10;
+    m[1][1] = m11;
+}
+
+/**
  * Set to 0 all of the matrix values
 */
 void VECMATMatrix2Zero(VECMATMatrix2 m)
