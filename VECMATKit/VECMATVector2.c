@@ -89,6 +89,8 @@ void VECMATVector2Sum(VECMATVector2 v1, VECMATVector2 v2, VECMATVector2 res)
 
 /**
  * Substraction of two vectors (result in res)
+ * 
+ * v1 - v2
 */
 void VECMATVector2Sub(VECMATVector2 v1, VECMATVector2 v2, VECMATVector2 res)
 {
