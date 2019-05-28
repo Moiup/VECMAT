@@ -36,6 +36,32 @@ void VECMATMatrix4MakeTranslation(VECMATMatrix4 init, VECMATMatrix4 res, float t
 void VECMATMatrix4CreateScale(VECMATMatrix4 m, float Sx, float Sy, float Sz);
 
 /**
+* Scale the matrix `init` (result in matrix in res)
+*/
+void VECMATMatrix4MakeScale(VECMATMatrix4 init, VECMATMatrix4 res, float Sx, float Sy, float Sz);
+
+/**
+ * Create the X rotation matrix
+ * 
+ * Angle is in radian
+*/
+void VECMATMatrix4CreateRotationX(VECMATMatrix4 m, float angle);
+
+/**
+ * Create the Y rotation matrix
+ * 
+ * Angle is in radian
+*/
+void VECMATMatrix4CreateRotationY(VECMATMatrix4 m, float angle);
+
+/**
+ * Create the Z rotation matrix
+ * 
+ * Angle is in radian
+*/
+void VECMATMatrix4CreateRotationZ(VECMATMatrix4 m, float angle);
+
+/**
  * Put in `projection` the matrix of the Perspective projection
  * 
  * `angle` is the angle in degree

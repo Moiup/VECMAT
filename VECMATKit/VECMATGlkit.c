@@ -118,6 +118,103 @@ void VECMATMatrix4MakeScale(VECMATMatrix4 init, VECMATMatrix4 res, float Sx, flo
 }
 
 /**
+ * Create the X rotation matrix
+ * 
+ * Angle is in radian
+*/
+void VECMATMatrix4CreateRotationX(VECMATMatrix4 m, float angle)
+{
+    float cos_val = cos(angle);
+    float sin_val = sin(angle);
+
+    // First line
+    m[0][0] = 1;
+    m[0][1] = 0;
+    m[0][2] = 0;
+    m[0][3] = 0;
+    // Second line
+    m[1][0] = 0;
+    m[1][1] = cos_val;
+    m[1][2] = sin_val;
+    m[1][3] = 0;
+    // Thirld line
+    m[2][0] = 0;
+    m[2][1] = -sin_val;
+    m[2][2] = cos_val;
+    m[2][3] = 0;
+    // Fourth line
+    m[3][0] = 0;
+    m[3][1] = 0;
+    m[3][2] = 0;
+    m[3][3] = 1;
+}
+
+/**
+ * Create the Y rotation matrix
+ * 
+ * Angle is in radian
+*/
+void VECMATMatrix4CreateRotationY(VECMATMatrix4 m, float angle)
+{
+    float cos_val = cos(angle);
+    float sin_val = sin(angle);
+
+    // First line
+    m[0][0] = cos_val;
+    m[0][1] = 0;
+    m[0][2] = -sin_val;
+    m[0][3] = 0;
+    // Second line
+    m[1][0] = 0;
+    m[1][1] = 1;
+    m[1][2] = 0;
+    m[1][3] = 0;
+    // Thirld line
+    m[2][0] = sin_val;
+    m[2][1] = 0;
+    m[2][2] = cos_val;
+    m[2][3] = 0;
+    // Fourth line
+    m[3][0] = 0;
+    m[3][1] = 0;
+    m[3][2] = 0;
+    m[3][3] = 1;
+}
+
+/**
+ * Create the Z rotation matrix
+ * 
+ * Angle is in radian
+*/
+void VECMATMatrix4CreateRotationZ(VECMATMatrix4 m, float angle)
+{
+    float cos_val = cos(angle);
+    float sin_val = sin(angle);
+
+    // First line
+    m[0][0] = cos_val;
+    m[0][1] = sin_val;
+    m[0][2] = 0;
+    m[0][3] = 0;
+    // Second line
+    m[1][0] = -sin_val;
+    m[1][1] = cos_val;
+    m[1][2] = 0;
+    m[1][3] = 0;
+    // Thirld line
+    m[2][0] = 0;
+    m[2][1] = 0;
+    m[2][2] = 1;
+    m[2][3] = 0;
+    // Fourth line
+    m[3][0] = 0;
+    m[3][1] = 0;
+    m[3][2] = 0;
+    m[3][3] = 1;
+}
+
+
+/**
  * Put in `projection` the matrix of the Perspective projection
  * 
  * `angle` is the angle in degree
