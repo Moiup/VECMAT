@@ -101,3 +101,13 @@ void VECMATVector3Sum(VECMATVector3 v1, VECMATVector3 v2, VECMATVector3 res)
     res[VEC3_Y] = v1[VEC3_Y] + v2[VEC3_Y];
     res[VEC3_Z] = v1[VEC3_Z] + v2[VEC3_Z];
 }
+
+/**
+ * Substraction of two vectors (result in res)
+*/
+void VECMATVector3Sub(VECMATVector3 v1, VECMATVector3 v2, VECMATVector3 res)
+{
+    res[VEC3_X] = v1[VEC3_X] - v2[VEC3_X];
+    res[VEC3_Y] = v1[VEC3_Y] - v2[VEC3_Y];
+    res[VEC3_Z] = v1[VEC3_Z] - v2[VEC3_Z];
+}

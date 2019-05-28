@@ -81,8 +81,17 @@ float VECMATVector2Length(VECMATVector2 v)
 /**
  * Sum of two vectors (result in res)
 */
-void VECMATVector3Sum(VECMATVector2 v1, VECMATVector2 v2, VECMATVector2 res)
+void VECMATVector2Sum(VECMATVector2 v1, VECMATVector2 v2, VECMATVector2 res)
 {
     res[VEC2_X] = v1[VEC2_X] + v2[VEC2_X];
     res[VEC2_Y] = v1[VEC2_Y] + v2[VEC2_Y];
+}
+
+/**
+ * Substraction of two vectors (result in res)
+*/
+void VECMATVector2Sub(VECMATVector2 v1, VECMATVector2 v2, VECMATVector2 res)
+{
+    res[VEC2_X] = v1[VEC2_X] - v2[VEC2_X];
+    res[VEC2_Y] = v1[VEC2_Y] - v2[VEC2_Y];
 }

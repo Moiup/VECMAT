@@ -11,9 +11,9 @@
 #define VECMAT_VECTOR2_H
 #include "VECMATTools.h"
 
-#define VEC2_DIM 2  // The number of values
-#define VEC2_X 0    // Access the X value
-#define VEC2_Y 1    // Access the Y value
+#define VEC2_DIM 2 // The number of values
+#define VEC2_X 0   // Access the X value
+#define VEC2_Y 1   // Access the Y value
 
 #define VEC2_LENGTH(v) (sqrt((v[VEC2_X]) * (v[VEC2_X])) + ((v[VEC2_Y]) * (v[VEC2_Y])))
 
@@ -24,11 +24,9 @@
 // Vector 2
 typedef float VECMATVector2[VEC2_DIM];
 
-
 /**************************************************/
 /* Functions                                      */
 /**************************************************/
-
 
 /**
  * Set all value of `v` to 0
@@ -63,6 +61,11 @@ float VECMATVector2Length(VECMATVector2 v);
 /**
  * Sum of two vectors (result in res)
 */
-void VECMATVector3Sum(VECMATVector2 v1, VECMATVector2 v2, VECMATVector2 res);
+void VECMATVector2Sum(VECMATVector2 v1, VECMATVector2 v2, VECMATVector2 res);
+
+/**
+ * Substraction of two vectors (result in res)
+*/
+void VECMATVector2Sub(VECMATVector2 v1, VECMATVector2 v2, VECMATVector2 res);
 
 #endif

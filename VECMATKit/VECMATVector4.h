@@ -70,4 +70,9 @@ void VECMATVector4CrossProduct(VECMATVector4 v1, VECMATVector4 v2, VECMATVector4
 */
 void VECMATVector4Sum(VECMATVector4 v1, VECMATVector4 v2, VECMATVector4 res);
 
+/**
+ * Substraction of two vectors (result in res)
+*/
+void VECMATVector4Sub(VECMATVector4 v1, VECMATVector4 v2, VECMATVector4 res);
+
 #endif

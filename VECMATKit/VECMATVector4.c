@@ -110,3 +110,14 @@ void VECMATVector4Sum(VECMATVector4 v1, VECMATVector4 v2, VECMATVector4 res)
     res[VEC4_Z] = v1[VEC4_Z] + v2[VEC4_Z];
     res[VEC4_W] = v1[VEC4_W] + v2[VEC4_W];
 }
+
+/**
+ * Substraction of two vectors (result in res)
+*/
+void VECMATVector4Sub(VECMATVector4 v1, VECMATVector4 v2, VECMATVector4 res)
+{
+    res[VEC4_X] = v1[VEC4_X] - v2[VEC4_X];
+    res[VEC4_Y] = v1[VEC4_Y] - v2[VEC4_Y];
+    res[VEC4_Z] = v1[VEC4_Z] - v2[VEC4_Z];
+    res[VEC4_W] = v1[VEC4_W] - v2[VEC4_W];
+}
