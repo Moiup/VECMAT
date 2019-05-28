@@ -12,7 +12,7 @@
 /**
  * Create the translation matrix (result in m)
 */
-void VECMATMatrix4TranslationCreate(VECMATMatrix4 m, float x, float y, float z)
+void VECMATMatrix4CreateTranslation(VECMATMatrix4 m, float x, float y, float z)
 {
     // First line
     m[0][0] = 1;
@@ -37,9 +37,9 @@ void VECMATMatrix4TranslationCreate(VECMATMatrix4 m, float x, float y, float z)
 }
 
 /**
-* Create the translation matrix of the `init` matrix (result is in res)
+* Translate the matris `init` (resultint matrix in res)
 */
-void VECMATMatrix4Translation(VECMATMatrix4 init, VECMATMatrix4 res, float x, float y, float z)
+void VECMATMatrix4MakeTranslation(VECMATMatrix4 init, VECMATMatrix4 res, float x, float y, float z)
 {
     // First line
     res[0][0] = init[0][0] + init[3][0] * x;

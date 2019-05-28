@@ -9,12 +9,10 @@
 */
 #include "VECMATVector4.h"
 
-
 /**
  * Besides the VECMATVector4Zero and VECMATVector4Define functions, the `W`value will always be 1, or supposed to be 1
  * 
 */
-
 
 /**
  * Set all value of `v` to 0
@@ -56,10 +54,16 @@ void VECMATVector4CreateNormalized(float p1X, float p1Y, float p1Z, float p2X, f
 {
     float length;
 
-    VECMATVector4Create(p1X, p1Y, p1Z, p2X, p2Y, p2Z, v);
+    // Creating the vector
+    v[VEC4_X] = (p2X) - (p1X);
+    v[VEC4_Y] = (p2Y) - (p1Y);
+    v[VEC4_Z] = (p2Z) - (p1Z);
+    v[VEC4_W] = HOMOGENEOUS_VAL;
 
-    length = VECMATVector4Length(v);
+    // Getting the vector length
+    length = VEC4_LENGTH(v);
 
+    // Normalizing the vector
     v[VEC4_X] = v[VEC4_X] / length;
     v[VEC4_Y] = v[VEC4_Y] / length;
     v[VEC4_Z] = v[VEC4_Z] / length;
@@ -71,7 +75,7 @@ void VECMATVector4CreateNormalized(float p1X, float p1Y, float p1Z, float p2X, f
 */
 void VECMATVector4Normalize(VECMATVector4 v)
 {
-    float length = VECMATVector4Length(v);
+    float length = VEC4_LENGTH(v);
 
     v[VEC4_X] = v[VEC4_X] / length;
     v[VEC4_Y] = v[VEC4_Y] / length;
@@ -83,17 +87,26 @@ void VECMATVector4Normalize(VECMATVector4 v)
 */
 float VECMATVector4Length(VECMATVector4 v)
 {
-    return sqrt((v[VEC4_X] * v[VEC4_X]) + (v[VEC4_Y] * v[VEC4_Y]) + (v[VEC4_Z] * v[VEC4_Z]));
+    return VEC4_LENGTH(v);
 }
 
 /**
- * Put in `vn` the orthogonal vector to the plan formed with `v1` and `v2`
+ * The cross product between `v1` and `v2` (result in res)
 */
-void VECMATVector4VecteurNormal(VECMATVector4 v1, VECMATVector4 v2, VECMATVector4 vn)
+void VECMATVector4CrossProduct(VECMATVector4 v1, VECMATVector4 v2, VECMATVector4 vn)
 {
     vn[VEC4_X] = v1[VEC4_Y] * v2[VEC4_Z] - v1[VEC4_Z] * v2[VEC4_Y];
     vn[VEC4_Y] = v1[VEC4_Z] * v2[VEC4_X] - v1[VEC4_X] * v2[VEC4_Z];
     vn[VEC4_Z] = v1[VEC4_X] * v2[VEC4_Y] - v1[VEC4_Y] * v2[VEC4_X];
 }
 
-
+/**
+ * Sum of two vectors (result in res)
+*/
+void VECMATVector4Sum(VECMATVector4 v1, VECMATVector4 v2, VECMATVector4 res)
+{
+    res[VEC4_X] = v1[VEC4_X] + v2[VEC4_X];
+    res[VEC4_Y] = v1[VEC4_Y] + v2[VEC4_Y];
+    res[VEC4_Z] = v1[VEC4_Z] + v2[VEC4_Z];
+    res[VEC4_W] = v1[VEC4_W] + v2[VEC4_W];
+}

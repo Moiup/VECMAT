@@ -44,10 +44,14 @@ void VECMATVector2CreateNormalized(float p1X, float p1Y, float p2X, float p2Y, V
 {
     float length;
 
-    VECMATVector2Create(p1X, p1Y, p2X, p2Y, v);
+    // Creating the vector
+    v[VEC2_X] = p2X - p1X;
+    v[VEC2_Y] = p2Y - p1Y;
 
-    length = VECMATVector2Length(v);
+    // Getting vector's length
+    length = VEC2_LENGTH(v);
 
+    // Normalizing the vector
     v[VEC2_X] = v[VEC2_X] / length;
     v[VEC2_Y] = v[VEC2_Y] / length;
 }
@@ -58,8 +62,10 @@ void VECMATVector2CreateNormalized(float p1X, float p1Y, float p2X, float p2Y, V
 */
 void VECMATVector2Normalize(VECMATVector2 v)
 {
-    float length = VECMATVector2Length(v);
+    // Getting vector's length
+    float length = VEC2_LENGTH(v);
 
+    // Normalizing the vector
     v[VEC2_X] = v[VEC2_X] / length;
     v[VEC2_Y] = v[VEC2_Y] / length;
 }
@@ -69,5 +75,14 @@ void VECMATVector2Normalize(VECMATVector2 v)
 */
 float VECMATVector2Length(VECMATVector2 v)
 {
-    return sqrt((v[VEC2_X] * v[VEC2_X]) + (v[VEC2_Y] * v[VEC2_Y]));
+    return VEC2_LENGTH(v);
+}
+
+/**
+ * Sum of two vectors (result in res)
+*/
+void VECMATVector3Sum(VECMATVector2 v1, VECMATVector2 v2, VECMATVector2 res)
+{
+    res[VEC2_X] = v1[VEC2_X] + v2[VEC2_X];
+    res[VEC2_Y] = v1[VEC2_Y] + v2[VEC2_Y];
 }

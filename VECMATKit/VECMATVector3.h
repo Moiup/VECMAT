@@ -16,6 +16,8 @@
 #define VEC3_Y 1    // Access the Y value
 #define VEC3_Z 2    // Access the Z value
 
+#define VEC3_LENGTH(v) (sqrt((v[VEC3_X]) * (v[VEC3_X])) + ((v[VEC3_Y]) * (v[VEC3_Y])) + ((v[VEC3_Z]) * (v[VEC3_Z])))
+
 
 /***********************************************/
 /* Type definitions                            */
@@ -58,8 +60,13 @@ void VECMATVector3Normalize(VECMATVector3 v);
 float VECMATVector3Length(VECMATVector3 v);
 
 /**
- * Put in `vn` the orthogonal vector to the plan formed with `v1` and `v2`
+ * The cross product between `v1` and `v2` (result in res)
 */
-void VECMATVector3NormalVector(VECMATVector3 v1, VECMATVector3 v2, VECMATVector3 vn);
+void VECMATVector3CrossProduct(VECMATVector3 v1, VECMATVector3 v2, VECMATVector3 vn);
+
+/**
+ * Sum of two vectors (result in res)
+*/
+void VECMATVector3Sum(VECMATVector3 v1, VECMATVector3 v2, VECMATVector3 res);
 
 #endif

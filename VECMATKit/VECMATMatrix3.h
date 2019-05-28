@@ -39,6 +39,11 @@ void VECMATMatrix3Identity(VECMATMatrix3 m);
 void VECMATMatrix3Sum(VECMATMatrix3 m1, VECMATMatrix3 m2, VECMATMatrix3 res);
 
 /**
+ * Substract the matrix `m2` to the matrix `m1` (result in res)
+*/
+void VECMATMatrix3Sub(VECMATMatrix3 m1, VECMATMatrix3 m2, VECMATMatrix3 res);
+
+/**
  * Multiplication of two matrix, the resulting matrix is in `res`
  * 
  * The multplication is in this form : m1 * m2

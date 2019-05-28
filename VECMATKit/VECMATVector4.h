@@ -17,6 +17,9 @@
 #define VEC4_Z 2    // Access the Z value
 #define VEC4_W 3    // Access the W value, it is the homogeneous value
 
+#define VEC4_LENGTH(v) (sqrt((v[VEC4_X]) * (v[VEC4_X])) + ((v[VEC4_Y]) * (v[VEC4_Y])) + ((v[VEC4_Z]) * (v[VEC4_Z])))
+
+
 /***********************************************/
 /* Type definitions                            */
 /***********************************************/
@@ -58,9 +61,13 @@ void VECMATVector4Normalize(VECMATVector4 v);
 float VECMATVector4Length(VECMATVector4 v);
 
 /**
- * Put in `vn` the orthogonal vector to the plan formed with `v1` and `v2`
+ * The cross product between `v1` and `v2` (result in res)
 */
-void VECMATVector4VecteurNormal(VECMATVector4 v1, VECMATVector4 v2, VECMATVector4 vn);
+void VECMATVector4CrossProduct(VECMATVector4 v1, VECMATVector4 v2, VECMATVector4 vn);
 
+/**
+ * Sum of two vectors (result in res)
+*/
+void VECMATVector4Sum(VECMATVector4 v1, VECMATVector4 v2, VECMATVector4 res);
 
 #endif

@@ -11,7 +11,7 @@
 #define VECMAT_MATRIX4_H
 #include "VECMATTools.h"
 
-#define MAT4_DIM 4  // The number of values
+#define MAT4_DIM 4 // The number of values
 
 /***********************************************/
 /* Type definitions                            */
@@ -39,11 +39,15 @@ void VECMATMatrix4Identity(VECMATMatrix4 m);
 void VECMATMatrix4Sum(VECMATMatrix4 m1, VECMATMatrix4 m2, VECMATMatrix4 res);
 
 /**
+ * Substract the matrix `m2` to the matrix `m1` (result in res)
+*/
+void VECMATMatrix4Sub(VECMATMatrix4 m1, VECMATMatrix4 m2, VECMATMatrix4 res);
+
+/**
  * Multiplication of two matrix, the resulting matrix is in `res`
  * 
  * The multplication is in this form : m1 * m2
 */
 void VECMATMatrix4Mult(VECMATMatrix4 m1, VECMATMatrix4 m2, VECMATMatrix4 res);
-
 
 #endif

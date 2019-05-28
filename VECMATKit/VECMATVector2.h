@@ -15,6 +15,8 @@
 #define VEC2_X 0    // Access the X value
 #define VEC2_Y 1    // Access the Y value
 
+#define VEC2_LENGTH(v) (sqrt((v[VEC2_X]) * (v[VEC2_X])) + ((v[VEC2_Y]) * (v[VEC2_Y])))
+
 /***********************************************/
 /* Type definitions                            */
 /***********************************************/
@@ -58,5 +60,9 @@ void VECMATVector2Normalize(VECMATVector2 v);
 */
 float VECMATVector2Length(VECMATVector2 v);
 
+/**
+ * Sum of two vectors (result in res)
+*/
+void VECMATVector3Sum(VECMATVector2 v1, VECMATVector2 v2, VECMATVector2 res);
 
 #endif

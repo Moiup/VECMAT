@@ -9,7 +9,6 @@
 */
 #include "VECMATVector3.h"
 
-
 /**
  * Set all value of `v` to 0
 */
@@ -47,10 +46,15 @@ void VECMATVector3CreateNormalized(float p1X, float p1Y, float p1Z, float p2X, f
 {
     float length;
 
-    VECMATVector3Create(p1X, p1Y, p1Z, p2X, p2Y, p2Z, v);
+    // Creating the vector
+    v[VEC3_X] = p2X - p1X;
+    v[VEC3_Y] = p2Y - p1Y;
+    v[VEC3_Z] = p2Z - p1Z;
 
-    length = VECMATVector3Length(v);
+    // Getting vector's length
+    length = VEC3_LENGTH(v);
 
+    // Normalizing the vector
     v[VEC3_X] = v[VEC3_X] / length;
     v[VEC3_Y] = v[VEC3_Y] / length;
     v[VEC3_Z] = v[VEC3_Z] / length;
@@ -61,8 +65,10 @@ void VECMATVector3CreateNormalized(float p1X, float p1Y, float p1Z, float p2X, f
 */
 void VECMATVector3Normalize(VECMATVector3 v)
 {
-    float length = VECMATVector3Length(v);
+    // Getting vector's length
+    float length = VEC3_LENGTH(v);
 
+    // Normalizing the vector
     v[VEC3_X] = v[VEC3_X] / length;
     v[VEC3_Y] = v[VEC3_Y] / length;
     v[VEC3_Z] = v[VEC3_Z] / length;
@@ -73,14 +79,25 @@ void VECMATVector3Normalize(VECMATVector3 v)
 */
 float VECMATVector3Length(VECMATVector3 v)
 {
-    return sqrt((v[VEC3_X] * v[VEC3_X]) + (v[VEC3_Y] * v[VEC3_Y]) + (v[VEC3_Z] * v[VEC3_Z]));
+    return VEC3_LENGTH(v);
 }
 
 /**
- * Put in `vn` the orthogonal vector to the plan formed with `v1` and `v2`
+ * The cross product between `v1` and `v2` (result in res)
 */
-void VECMATVector3NormalVector(VECMATVector3 v1, VECMATVector3 v2, VECMATVector3 vn){
+void VECMATVector3CrossProduct(VECMATVector3 v1, VECMATVector3 v2, VECMATVector3 vn)
+{
     vn[VEC3_X] = v1[VEC3_Y] * v2[VEC3_Z] - v1[VEC3_Z] * v2[VEC3_Y];
     vn[VEC3_Y] = v1[VEC3_Z] * v2[VEC3_X] - v1[VEC3_X] * v2[VEC3_Z];
     vn[VEC3_Z] = v1[VEC3_X] * v2[VEC3_Y] - v1[VEC3_Y] * v2[VEC3_X];
+}
+
+/**
+ * Sum of two vectors (result in res)
+*/
+void VECMATVector3Sum(VECMATVector3 v1, VECMATVector3 v2, VECMATVector3 res)
+{
+    res[VEC3_X] = v1[VEC3_X] + v2[VEC3_X];
+    res[VEC3_Y] = v1[VEC3_Y] + v2[VEC3_Y];
+    res[VEC3_Z] = v1[VEC3_Z] + v2[VEC3_Z];
 }

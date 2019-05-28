@@ -25,7 +25,8 @@ void VECMATMatrix2Zero(VECMATMatrix2 m)
 /**
  * Set the matrix `m`as an identity matrix
 */
-void VECMATMatrix2Identity(VECMATMatrix2 m){
+void VECMATMatrix2Identity(VECMATMatrix2 m)
+{
     // First line
     m[0][0] = 1;
     m[0][1] = 0;
@@ -38,13 +39,26 @@ void VECMATMatrix2Identity(VECMATMatrix2 m){
  * Add two matrix, the result is in `res`
 */
 void VECMATMatrix2Sum(VECMATMatrix2 m1, VECMATMatrix2 m2, VECMATMatrix2 res)
-{   
+{
     // First line
     res[0][0] = m1[0][0] + m2[0][0];
     res[0][1] = m1[0][1] + m2[0][1];
     // Second line
     res[1][0] = m1[1][0] + m2[1][0];
     res[1][1] = m1[1][1] + m2[1][1];
+}
+
+/**
+ * Substract the matrix `m2` to the matrix `m1` (result in res)
+*/
+void VECMATMatrix2Sub(VECMATMatrix2 m1, VECMATMatrix2 m2, VECMATMatrix2 res)
+{
+    // First line
+    res[0][0] = m1[0][0] - m2[0][0];
+    res[0][1] = m1[0][1] - m2[0][1];
+    // Second line
+    res[1][0] = m1[1][0] - m2[1][0];
+    res[1][1] = m1[1][1] - m2[1][1];
 }
 
 /**
@@ -61,5 +75,3 @@ void VECMATMatrix2Mult(VECMATMatrix2 m1, VECMATMatrix2 m2, VECMATMatrix2 res)
     res[1][0] = m1[1][0] * m2[0][0] + m1[1][1] * m2[1][0];
     res[1][1] = m1[1][0] * m2[0][1] + m1[1][1] * m2[1][1];
 }
-
-
