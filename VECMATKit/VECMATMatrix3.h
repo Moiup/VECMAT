@@ -40,11 +40,23 @@ void VECMATMatrix3Identity(VECMATMatrix3 m);
 
 /**
  * Add two matrix, the result is in `res`
+ * 
+ * If you don't want to store the result in a new matrix, call the function like this :
+ *      VECMATMatrix3Sum(m1, m2, m1);
+ * or
+ *      VECMATMatrix3Sum(m1, m2, m2);
+ * 
 */
 void VECMATMatrix3Sum(VECMATMatrix3 m1, VECMATMatrix3 m2, VECMATMatrix3 res);
 
 /**
  * Substract the matrix `m2` to the matrix `m1` (result in res)
+ * 
+ * If you don't want to store the result in a new matrix, call the function like this :
+ *      VECMATMatrix3Sub(m1, m2, m1);
+ * or
+ *      VECMATMatrix3Sub(m1, m2, m2);
+ * 
 */
 void VECMATMatrix3Sub(VECMATMatrix3 m1, VECMATMatrix3 m2, VECMATMatrix3 res);
 

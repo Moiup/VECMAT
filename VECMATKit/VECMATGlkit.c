@@ -37,8 +37,11 @@ void VECMATMatrix4CreateTranslation(VECMATMatrix4 m, float tx, float ty, float t
 }
 
 /**
-* Translate the matris `init` (result in matrix in res)
-*/
+ * Translate the matrix `init` (result in matrix in res)
+ *
+ * If you don't want to store the result in a new matrix, call the function like this :
+ *      VECMATMatrix4MakeTranslation(m, m, tx, ty, tz);
+ */
 void VECMATMatrix4MakeTranslation(VECMATMatrix4 init, VECMATMatrix4 res, float tx, float ty, float tz)
 {
     // First line
@@ -91,8 +94,11 @@ void VECMATMatrix4CreateScale(VECMATMatrix4 m, float Sx, float Sy, float Sz)
 }
 
 /**
-* Scale the matrix `init` (result in matrix in res)
-*/
+ * Scale the matrix `init` (result in matrix in res)
+ * 
+ * * If you don't want to store the result in a new matrix, call the function like this :
+ *      VECMATMatrix4MakeScale(m, m, Sx, Sy, Sz);
+ */
 void VECMATMatrix4MakeScale(VECMATMatrix4 init, VECMATMatrix4 res, float Sx, float Sy, float Sz)
 {
     // First line

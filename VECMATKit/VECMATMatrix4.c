@@ -92,6 +92,12 @@ void VECMATMatrix4Identity(VECMATMatrix4 m)
 
 /**
  * Add two matrix, the result is in `res`
+ * 
+ * If you don't want to store the result in a new matrix, call the function like this :
+ *      VECMATMatrix4Sum(m1, m2, m1);
+ * or
+ *      VECMATMatrix4Sum(m1, m2, m2);
+ * 
 */
 void VECMATMatrix4Sum(VECMATMatrix4 m1, VECMATMatrix4 m2, VECMATMatrix4 res)
 {
@@ -119,6 +125,12 @@ void VECMATMatrix4Sum(VECMATMatrix4 m1, VECMATMatrix4 m2, VECMATMatrix4 res)
 
 /**
  * Substract the matrix `m2` to the matrix `m1` (result in res)
+ * 
+ * If you don't want to store the result in a new matrix, call the function like this :
+ *      VECMATMatrix4Sub(m1, m2, m1);
+ * or
+ *      VECMATMatrix4Sub(m1, m2, m2);
+ * 
 */
 void VECMATMatrix4Sub(VECMATMatrix4 m1, VECMATMatrix4 m2, VECMATMatrix4 res)
 {
