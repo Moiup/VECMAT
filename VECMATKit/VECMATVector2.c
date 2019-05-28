@@ -104,3 +104,12 @@ void VECMATVector2ScalarMult(VECMATVector2 v, float r)
     v[VEC2_X] = v[VEC2_X] * r;
     v[VEC2_Y] = v[VEC2_Y] * r;
 }
+
+/**
+ * Divide a vector by a scalar (be careful, you will loose the value of your initial vector)
+*/
+void VECMATVector2ScalarDivide(VECMATVector2 v, float r)
+{
+    v[VEC2_X] = v[VEC2_X] / r;
+    v[VEC2_Y] = v[VEC2_Y] / r;
+}

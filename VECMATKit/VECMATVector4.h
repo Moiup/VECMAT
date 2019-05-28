@@ -85,4 +85,9 @@ void VECMATVector4ScalarMult(VECMATVector4 v, float r);
 */
 void VECMATVector3ScalarMult(VECMATVector3 v, float r);
 
+/**
+ * Divide a vector by a scalar (be careful, you will loose the value of your initial vector)
+*/
+void VECMATVector4ScalarMult(VECMATVector4 v, float r);
+
 #endif

@@ -121,3 +121,13 @@ void VECMATVector3ScalarMult(VECMATVector3 v, float r)
     v[VEC3_Y] = v[VEC3_Y] * r;
     v[VEC3_Z] = v[VEC3_Z] * r;
 }
+
+/**
+ * Divide a vector by a scalar (be careful, you will loose the value of your initial vector)
+*/
+void VECMATVector3ScalarMult(VECMATVector3 v, float r)
+{
+    v[VEC3_X] = v[VEC3_X] / r;
+    v[VEC3_Y] = v[VEC3_Y] / r;
+    v[VEC3_Z] = v[VEC3_Z] / r;
+}
