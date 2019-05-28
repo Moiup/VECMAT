@@ -94,6 +94,11 @@ void VECMATVector3CrossProduct(VECMATVector3 v1, VECMATVector3 v2, VECMATVector3
 
 /**
  * Sum of two vectors (result in res)
+ * 
+ * If you don't want to store the result in a new vector, call the function like this :
+ *      VECMATVector3Sum(v1, v2, v1);
+ * or
+ *      VECMATVector3Sum(v1, v2, v2);
 */
 void VECMATVector3Sum(VECMATVector3 v1, VECMATVector3 v2, VECMATVector3 res)
 {
@@ -106,6 +111,13 @@ void VECMATVector3Sum(VECMATVector3 v1, VECMATVector3 v2, VECMATVector3 res)
  * Substraction of two vectors (result in res)
  * 
  * v1 - v2
+ * 
+ * 
+ * If you don't want to store the result in a new vector, call the function like this :
+ *      VECMATVector3Sub(v1, v2, v1);
+ * or
+ *      VECMATVector3Sub(v1, v2, v2);
+ * 
 */
 void VECMATVector3Sub(VECMATVector3 v1, VECMATVector3 v2, VECMATVector3 res)
 {
@@ -115,41 +127,53 @@ void VECMATVector3Sub(VECMATVector3 v1, VECMATVector3 v2, VECMATVector3 res)
 }
 
 /**
- * Add a scalar to a vector (be careful, you will loose the value of your initial vector)
+ * Add a scalar to a vector (result is in res)
+ * 
+ * If you don't want to store the result in a new vector, call the function like this :
+ *      VECMATVector3ScalarSum(v, v, r);
 */
-void VECMATVector3ScalarSum(VECMATVector3 v, float r)
+void VECMATVector3ScalarSum(VECMATVector3 v, VECMATVector3 res, float r)
 {
-    v[VEC3_X] = v[VEC3_X] + r;
-    v[VEC3_Y] = v[VEC3_Y] + r;
-    v[VEC3_Z] = v[VEC3_Z] + r;
+    res[VEC3_X] = v[VEC3_X] + r;
+    res[VEC3_Y] = v[VEC3_Y] + r;
+    res[VEC3_Z] = v[VEC3_Z] + r;
 }
 
 /**
- * Substract a scalar to a vector (be careful, you will loose the value of your initial vector)
+ * Substract a scalar to a vector (result is in res)
+ * 
+ * If you don't want to store the result in a new vector, call the function like this :
+ *      VECMATVector3ScalarSub(v, v, r);
 */
-void VECMATVector3ScalarSub(VECMATVector3 v, float r)
+void VECMATVector3ScalarSub(VECMATVector3 v, VECMATVector3 res, float r)
 {
-    v[VEC3_X] = v[VEC3_X] - r;
-    v[VEC3_Y] = v[VEC3_Y] - r;
-    v[VEC3_Z] = v[VEC3_Z] - r;
+    res[VEC3_X] = v[VEC3_X] - r;
+    res[VEC3_Y] = v[VEC3_Y] - r;
+    res[VEC3_Z] = v[VEC3_Z] - r;
 }
 
 /**
  * Multpiply a vector by a scalar (be careful, you will loose the value of your initial vector)
+ * 
+ * If you don't want to store the result in a new vector, call the function like this :
+ *      VECMATVector3ScalarMult(v, v, r);
 */
-void VECMATVector3ScalarMult(VECMATVector3 v, float r)
+void VECMATVector3ScalarMult(VECMATVector3 v, VECMATVector3 res, float r)
 {
-    v[VEC3_X] = v[VEC3_X] * r;
-    v[VEC3_Y] = v[VEC3_Y] * r;
-    v[VEC3_Z] = v[VEC3_Z] * r;
+    res[VEC3_X] = v[VEC3_X] * r;
+    res[VEC3_Y] = v[VEC3_Y] * r;
+    res[VEC3_Z] = v[VEC3_Z] * r;
 }
 
 /**
  * Divide a vector by a scalar (be careful, you will loose the value of your initial vector)
+ * 
+ * If you don't want to store the result in a new vector, call the function like this :
+ *      VECMATVector3ScalarDivide(v, v, r);
 */
-void VECMATVector3ScalarDivide(VECMATVector3 v, float r)
+void VECMATVector3ScalarDivide(VECMATVector3 v, VECMATVector3 res, float r)
 {
-    v[VEC3_X] = v[VEC3_X] / r;
-    v[VEC3_Y] = v[VEC3_Y] / r;
-    v[VEC3_Z] = v[VEC3_Z] / r;
+    res[VEC3_X] = v[VEC3_X] / r;
+    res[VEC3_Y] = v[VEC3_Y] / r;
+    res[VEC3_Z] = v[VEC3_Z] / r;
 }
