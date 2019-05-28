@@ -97,6 +97,15 @@ void VECMATVector2Sub(VECMATVector2 v1, VECMATVector2 v2, VECMATVector2 res)
 }
 
 /**
+ * Add a scalar to a vector (be careful, you will loose the value of your initial vector)
+*/
+void VECMATVector2ScalarSum(VECMATVector2 v, float r)
+{
+    v[VEC2_X] = v[VEC2_X] + r;
+    v[VEC2_Y] = v[VEC2_Y] + r;
+}
+
+/**
  * Multpiply a vector by a scalar (be careful, you will loose the value of your initial vector)
 */
 void VECMATVector2ScalarMult(VECMATVector2 v, float r)

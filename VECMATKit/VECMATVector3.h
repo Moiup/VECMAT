@@ -75,8 +75,18 @@ void VECMATVector3Sum(VECMATVector3 v1, VECMATVector3 v2, VECMATVector3 res);
 void VECMATVector3Sub(VECMATVector3 v1, VECMATVector3 v2, VECMATVector3 res);
 
 /**
+ * Add a scalar to a vector (be careful, you will loose the value of your initial vector)
+*/
+void VECMATVector3ScalarSum(VECMATVector3 v, float r);
+
+/**
  * Divide a vector by a scalar (be careful, you will loose the value of your initial vector)
 */
 void VECMATVector3ScalarMult(VECMATVector3 v, float r);
+
+/**
+ * Divide a vector by a scalar (be careful, you will loose the value of your initial vector)
+*/
+void VECMATVector3ScalarDivide(VECMATVector3 v, float r);
 
 #endif
