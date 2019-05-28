@@ -125,45 +125,57 @@ void VECMATVector4Sub(VECMATVector4 v1, VECMATVector4 v2, VECMATVector4 res)
 }
 
 /**
- * Add a scalar to a vector (be careful, you will loose the value of your initial vector)
+ * Add a scalar to a vector (result is in res)
+ * 
+ * If you don't want to store the result in a new vector, call the function like this :
+ *      VECMATVector4ScalarSum(v, v, r);
 */
-void VECMATVector4ScalarSum(VECMATVector4 v, float r)
+void VECMATVector4ScalarSum(VECMATVector4 v, VECMATVector4 res, float r)
 {
-    v[VEC4_X] = v[VEC4_X] + r;
-    v[VEC4_Y] = v[VEC4_Y] + r;
-    v[VEC4_Z] = v[VEC4_Z] + r;
-    v[VEC4_W] = v[VEC4_W] + r;
+    res[VEC4_X] = v[VEC4_X] + r;
+    res[VEC4_Y] = v[VEC4_Y] + r;
+    res[VEC4_Z] = v[VEC4_Z] + r;
+    res[VEC4_W] = v[VEC4_W] + r;
 }
 
 /**
- * Substract a scalar to a vector (be careful, you will loose the value of your initial vector)
+ * Substract a scalar to a vector (result is in res)
+ * 
+ * If you don't want to store the result in a new vector, call the function like this :
+ *      VECMATVector4ScalarSub(v, v, r);
 */
-void VECMATVector4ScalarSub(VECMATVector4 v, float r)
+void VECMATVector4ScalarSub(VECMATVector4 v, VECMATVector4 res, float r)
 {
-    v[VEC4_X] = v[VEC4_X] - r;
-    v[VEC4_Y] = v[VEC4_Y] - r;
-    v[VEC4_Z] = v[VEC4_Z] - r;
-    v[VEC4_W] = v[VEC4_W] - r;
+    res[VEC4_X] = v[VEC4_X] - r;
+    res[VEC4_Y] = v[VEC4_Y] - r;
+    res[VEC4_Z] = v[VEC4_Z] - r;
+    res[VEC4_W] = v[VEC4_W] - r;
 }
 
 /**
  * Multpiply a vector by a scalar (be careful, you will loose the value of your initial vector)
+ * 
+ * If you don't want to store the result in a new vector, call the function like this :
+ *      VECMATVector4ScalarMult(v, v, r);
 */
-void VECMATVector4ScalarMult(VECMATVector4 v, float r)
+void VECMATVector4ScalarMult(VECMATVector4 v, VECMATVector4 res, float r)
 {
-    v[VEC4_X] = v[VEC4_X] * r;
-    v[VEC4_Y] = v[VEC4_Y] * r;
-    v[VEC4_Z] = v[VEC4_Z] * r;
-    v[VEC4_W] = v[VEC4_W] * r;
+    res[VEC4_X] = v[VEC4_X] * r;
+    res[VEC4_Y] = v[VEC4_Y] * r;
+    res[VEC4_Z] = v[VEC4_Z] * r;
+    res[VEC4_W] = v[VEC4_W] * r;
 }
 
 /**
  * Divide a vector by a scalar (be careful, you will loose the value of your initial vector)
+ * 
+ * If you don't want to store the result in a new vector, call the function like this :
+ *      VECMATVector4ScalarMult(v, v, r);
 */
-void VECMATVector4ScalarDivide(VECMATVector4 v, float r)
+void VECMATVector4ScalarDivide(VECMATVector4 v, VECMATVector4 res, float r)
 {
-    v[VEC4_X] = v[VEC4_X] / r;
-    v[VEC4_Y] = v[VEC4_Y] / r;
-    v[VEC4_Z] = v[VEC4_Z] / r;
-    v[VEC4_W] = v[VEC4_W] / r;
+    res[VEC4_X] = v[VEC4_X] / r;
+    res[VEC4_Y] = v[VEC4_Y] / r;
+    res[VEC4_Z] = v[VEC4_Z] / r;
+    res[VEC4_W] = v[VEC4_W] / r;
 }
