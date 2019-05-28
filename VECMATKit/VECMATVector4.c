@@ -121,3 +121,14 @@ void VECMATVector4Sub(VECMATVector4 v1, VECMATVector4 v2, VECMATVector4 res)
     res[VEC4_Z] = v1[VEC4_Z] - v2[VEC4_Z];
     res[VEC4_W] = v1[VEC4_W] - v2[VEC4_W];
 }
+
+/**
+ * Multpiply a vector by a scalar (be careful, you will loose the value of your initial vector)
+*/
+void VECMATVector4ScalarMult(VECMATVector4 v, float r)
+{
+    v[VEC4_X] = v[VEC4_X] * r;
+    v[VEC4_Y] = v[VEC4_Y] * r;
+    v[VEC4_Z] = v[VEC4_Z] * r;
+    v[VEC4_W] = v[VEC4_W] * r;
+}

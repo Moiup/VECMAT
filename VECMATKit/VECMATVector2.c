@@ -95,3 +95,12 @@ void VECMATVector2Sub(VECMATVector2 v1, VECMATVector2 v2, VECMATVector2 res)
     res[VEC2_X] = v1[VEC2_X] - v2[VEC2_X];
     res[VEC2_Y] = v1[VEC2_Y] - v2[VEC2_Y];
 }
+
+/**
+ * Multpiply a vector by a scalar (be careful, you will loose the value of your initial vector)
+*/
+void VECMATVector2ScalarMult(VECMATVector2 v, float r)
+{
+    v[VEC2_X] = v[VEC2_X] * r;
+    v[VEC2_Y] = v[VEC2_Y] * r;
+}
