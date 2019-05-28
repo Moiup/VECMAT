@@ -134,6 +134,17 @@ void VECMATVector4ScalarSum(VECMATVector4 v, float r)
 }
 
 /**
+ * Substract a scalar to a vector (be careful, you will loose the value of your initial vector)
+*/
+void VECMATVector4ScalarSub(VECMATVector4 v, float r)
+{
+    v[VEC4_X] = v[VEC4_X] - r;
+    v[VEC4_Y] = v[VEC4_Y] - r;
+    v[VEC4_Z] = v[VEC4_Z] - r;
+    v[VEC4_W] = v[VEC4_W] - r;
+}
+
+/**
  * Multpiply a vector by a scalar (be careful, you will loose the value of your initial vector)
 */
 void VECMATVector4ScalarMult(VECMATVector4 v, float r)

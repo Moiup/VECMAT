@@ -81,6 +81,11 @@ void VECMATVector4Sub(VECMATVector4 v1, VECMATVector4 v2, VECMATVector4 res);
 void VECMATVector4ScalarSum(VECMATVector4 v, float r);
 
 /**
+ * Substract a scalar to a vector (be careful, you will loose the value of your initial vector)
+*/
+void VECMATVector4ScalarSub(VECMATVector4 v, float r);
+
+/**
  * Multpiply a vector by a scalar (be careful, you will loose the value of your initial vector)
 */
 void VECMATVector4ScalarMult(VECMATVector4 v, float r);
