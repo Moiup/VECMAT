@@ -106,17 +106,17 @@ void VECMATMatrix4MakeScale(VECMATMatrix4 init, VECMATMatrix4 res, float Sx, flo
 {
     // First line
     res[0][0] = init[0][0] * Sx;
-    res[0][1] = init[0][1] * Sx;
-    res[0][2] = init[0][2] * Sx;
+    res[0][1] = init[0][1] * Sy;
+    res[0][2] = init[0][2] * Sz;
     res[0][3] = init[0][3];
     // Second line
-    res[1][0] = init[1][0] * Sy;
+    res[1][0] = init[1][0] * Sx;
     res[1][1] = init[1][1] * Sy;
-    res[1][2] = init[1][2] * Sy;
+    res[1][2] = init[1][2] * Sz;
     res[1][3] = init[1][3];
     // Thirld line
-    res[2][0] = init[2][0] * Sz;
-    res[2][1] = init[2][1] * Sz;
+    res[2][0] = init[2][0] * Sx;
+    res[2][1] = init[2][1] * Sy;
     res[2][2] = init[2][2] * Sz;
     res[2][3] = init[2][3];
     // Fourth line
