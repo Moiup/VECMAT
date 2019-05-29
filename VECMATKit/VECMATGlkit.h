@@ -41,6 +41,9 @@ void VECMATMatrix4CreateScale(VECMATMatrix4 m, float Sx, float Sy, float Sz);
 /**
  * Scale the matrix `init` (result in matrix in res)
  * 
+ * The operation is : S * init
+ * (S is the scale matrix)
+ * 
  * * If you don't want to store the result in a new matrix, call the function like this :
  *      VECMATMatrix4MakeScale(m, m, Sx, Sy, Sz);
  */
