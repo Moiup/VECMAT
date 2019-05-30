@@ -6,7 +6,7 @@
 ```C
 VECMATVector2
 ```
-Vector of size 2.
+Vector of size 2. Has two coordinates : _x_ and _y_.
 _____________
 ## **Creation**
 

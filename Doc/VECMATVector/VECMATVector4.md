@@ -6,7 +6,7 @@
 ```C
 VECMATVector4
 ```
-Vector of size 4.
+Vector of size 4. Has four coordinates : _x_, _y_, _z_ and _w_.
 _____________
 ## **Creation**
 
