@@ -1,7 +1,7 @@
 [Main menu](../../../../Readme.md)->[Doc](../../../VECMATKit.md)->[VECMATVector](../../VECMATVector.md)->[VECMATVector2](../../VECMATVector2.md)
 
 # VECMATVector2ScalarMult(\_,\_,\_)
-Add a scalar to a vector.
+Multiply a vector by a scalar.
 
 ## **Declaration**
 ```C

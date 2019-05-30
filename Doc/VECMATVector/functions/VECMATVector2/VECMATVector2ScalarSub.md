@@ -1,7 +1,7 @@
 [Main menu](../../../../Readme.md)->[Doc](../../../VECMATKit.md)->[VECMATVector](../../VECMATVector.md)->[VECMATVector2](../../VECMATVector2.md)
 
 # VECMATVector2ScalarSub(\_,\_,\_)
-Add a scalar to a vector.
+Substract a scalar to a vector.
 
 ## **Declaration**
 ```C
