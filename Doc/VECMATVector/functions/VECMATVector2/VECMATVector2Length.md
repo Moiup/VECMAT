@@ -5,7 +5,7 @@ Return the length of the vector.
 
 ## **Declaration**
 ```C
-void VECMATVector2Normalize(VECMATVector2 v)
+void VECMATVector2Length(VECMATVector2 v)
 ```
 
 
