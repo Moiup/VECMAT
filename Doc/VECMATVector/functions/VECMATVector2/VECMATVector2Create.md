@@ -32,4 +32,4 @@ The _x_ coordinate of the second point.
 The _y_ coordinate of the second point.
 
 ## **Result**
-The vector `v` with coodinate calculated with _p1_ and _p2_.
+The vector `v` with coodinates calculated with _p1_ and _p2_.

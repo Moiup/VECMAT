@@ -32,4 +32,4 @@ The _x_ coordinate of the second point.
 The _y_ coordinate of the second point.
 
 ## **Result**
-The vector `v` with the normalized coodinate calculated with _p1_ and _p2_.
+The vector `v` with the normalized coodinates calculated with _p1_ and _p2_.
