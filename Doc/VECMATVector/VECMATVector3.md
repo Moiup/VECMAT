@@ -6,12 +6,12 @@
 ```C
 VECMATVector3
 ```
-Vector of size 3. Has four coordinates : _x_, _y_ and _z_.
+Vector of size 3. Has three coordinates : _x_, _y_ and _z_.
 _____________
 ## **Creation**
 
 ```C
-void VECMATVector3Zero(VECMATVector4)
+void VECMATVector3Zero(VECMATVector3)
 ```
 Set all values of the vector to 0. [More here.](./functions/VECMATVector3/VECMATVector3Zero.md)
 
@@ -28,55 +28,55 @@ Create a vector with the coordinates of the two given points. [More here.](./fun
 ```C
 void VECMATVector3CreateNormalized(float, float, float, float, float, float, VECMATVector3)
 ```
-Create a normalized vector with the coordinates of the two given points. [More here.](./functions/VECMATVector4/VECMATVector4CreateNormalized.md)
+Create a normalized vector with the coordinates of the two given points. [More here.](./functions/VECMATVector3/VECMATVector3CreateNormalized.md)
 
 ________________
 ## **Calculus**
 
 
 ```C
-void VECMATVector4Normalize(VECMATVector2)
+void VECMATVector3Normalize(VECMATVector3)
 ````
-Normalize the vector. [More here.](./functions/VECMATVector4/VECMATVector4Normalize.md)
+Normalize the vector. [More here.](./functions/VECMATVector3/VECMATVector3Normalize.md)
 
 ```C
-float VECMATVector4Length(VECMATVector2)
+float VECMATVector3Length(VECMATVector3)
 ```
-Return the length of the vector. [More here.](./functions/VECMATVector4/VECMATVector4Length.md)
+Return the length of the vector. [More here.](./functions/VECMATVector3/VECMATVector3Length.md)
 
 
 ```C
-void VECMATVector4CrossProduct(VECMATVector4, VECMATVector4, VECMATVector4)
+void VECMATVector3CrossProduct(VECMATVector3, VECMATVector3, VECMATVector3)
 ```
-Do the cross product of two vectors. [More here.](./functions/VECMATVector4/VECMATVector4CrossProduct.md)
+Do the cross product of two vectors. [More here.](./functions/VECMATVector3/VECMATVector3CrossProduct.md)
 
 
 ```C
-void VECMATVector4Sum(VECMATVector2, VECMATVector2, VECMATVector2)
+void VECMATVector3Sum(VECMATVector3, VECMATVector3, VECMATVector3)
 ```
-Do the sum of two vectors. [More here.](./functions/VECMATVector4/VECMATVector4Sum.md)
+Do the sum of two vectors. [More here.](./functions/VECMATVector3/VECMATVector3Sum.md)
 
 ```C
-void VECMATVector4Sub(VECMATVector2, VECMATVector2, VECMATVector2)
+void VECMATVector3Sub(VECMATVector3, VECMATVector3, VECMATVector3)
 ```
-Do the substraction of two vectors. [More here.](./functions/VECMATVector4/VECMATVector4Sub.md)
+Do the substraction of two vectors. [More here.](./functions/VECMATVector3/VECMATVector3Sub.md)
 
 ```C
-void VECMATVector2ScalarSum(VECMATVector2, VECMATVector2, float)
+void VECMATVector2ScalarSum(VECMATVector3, VECMATVector3, float)
 ```
-Add a scalar to a vector. [More here.](./functions/VECMATVector4/VECMATVector4ScalarSum.md)
+Add a scalar to a vector. [More here.](./functions/VECMATVector3/VECMATVector3ScalarSum.md)
 
 ```C
-void VECMATVector4ScalarSub(VECMATVector2, VECMATVector2, float)
+void VECMATVector3ScalarSub(VECMATVector3, VECMATVector3, float)
 ```
-Substract a scalar to a vector. [More here.](./functions/VECMATVector4/VECMATVector4ScalarSub.md)
+Substract a scalar to a vector. [More here.](./functions/VECMATVector3/VECMATVector3ScalarSub.md)
 
 ```C
-void VECMATVector4ScalarMult(VECMATVector2, VECMATVector2, float)
+void VECMATVector3ScalarMult(VECMATVector3, VECMATVector3, float)
 ````
-Multiply a vector by a scalar. [More here.](./functions/VECMATVector4/VECMATVector4ScalarMult.md)
+Multiply a vector by a scalar. [More here.](./functions/VECMATVector3/VECMATVector3ScalarMult.md)
 
 ```C
-void VECMATVector4ScalarDivide(VECMATVector2, VECMATVector2, float)
+void VECMATVector3ScalarDivide(VECMATVector3, VECMATVector3, float)
 ```
-Divide a vector by a scalar. [More here.](./functions/VECMATVector4/VECMATVector4ScalarDivide.md)
+Divide a vector by a scalar. [More here.](./functions/VECMATVector3/VECMATVector3ScalarDivide.md)
