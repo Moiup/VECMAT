@@ -21,12 +21,12 @@ void VECMATVector2Define(VECMATVector2, float, float)
 Set the vector with the given value. [More here.](./functions/VECMATVector2/VECMATVector2Define.md)
 
 ```C
-void VECMATVector2Create(float, float, float, float, VECMATVector2);
+void VECMATVector2Create(float, float, float, float, VECMATVector2)
 ```
 Create a vector with the coordinates of the two given points. [More here.](./functions/VECMATVector2/VECMATVector2Create.md)
 
 ```C
-void VECMATVector2CreateNormalized(float, float, float, float, VECMATVector2);
+void VECMATVector2CreateNormalized(float, float, float, float, VECMATVector2)
 ```
 Create a normalized vector with the coordinates of the two given points. [More here.](./functions/VECMATVector2/VECMATVector2CreateNormalized.md)
 
@@ -35,12 +35,12 @@ ________________
 
 
 ```C
-void VECMATVector2Normalize(VECMATVector2);
+void VECMATVector2Normalize(VECMATVector2)
 ````
 Normalize the vector. [More here.](./functions/VECMATVector2/VECMATVector2Normalize.md)
 
 ```C
-float VECMATVector2Length(VECMATVector2);
+float VECMATVector2Length(VECMATVector2)
 ```
 Return the length of the vector. [More here.](./functions/VECMATVector2/VECMATVector2Length.md)
 
