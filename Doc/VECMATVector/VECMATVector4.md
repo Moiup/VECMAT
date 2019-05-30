@@ -77,6 +77,6 @@ void VECMATVector4ScalarMult(VECMATVector2, VECMATVector2, float)
 Multiply a vector by a scalar. [More here.](./functions/VECMATVector4/VECMATVector4ScalarMult.md)
 
 ```C
-void VECMATVector4ScaVECMATVector4ScalarDividelarDivide(VECMATVector2, VECMATVector2, float)
+void VECMATVector4ScalarDivide(VECMATVector2, VECMATVector2, float)
 ```
 Divide a vector by a scalar. [More here.](./functions/VECMATVector4/VECMATVector4ScalarDivide.md)
