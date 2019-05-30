@@ -1,13 +1,13 @@
-[Main menu](../../../../Readme.md)->[Doc](../../../VECMATKit.md)->[VECMATVector](../../VECMATVector.md)->[VECMATVector4](../../VECMATVector4.md)
+[Main menu](../../../../Readme.md)->[Doc](../../../VECMATKit.md)->[VECMATVector](../../VECMATVector.md)->[VECMATVector3](../../VECMATVector3.md)
 
-# VECMATVector4ScalarSum(\_,\_,\_)
+# VECMATVector3ScalarSum(\_,\_,\_)
 Add a scalar to a vector.
 
 ## **Declaration**
 ```C
-VECMATVector4ScalarSum(
-        VECMATVector4 v,
-        VECMATVector4 res,
+VECMATVector3ScalarSum(
+        VECMATVector3 v,
+        VECMATVector3 res,
         float r
     )
 ```
@@ -15,10 +15,10 @@ VECMATVector4ScalarSum(
 
 ## **Parameters**
 **v**\
-A vector of size 4.
+A vector of size 3.
 
 **res**\
-The vector of size 4 where the result will be stored.
+The vector of size 3 where the result will be stored.
 
 **r**\
 The real value to add to the vector `v`.
@@ -29,5 +29,5 @@ The sum of `r` to the vector `v`stored in `res`
 ## **How to**
 If you don't want to store the result in a new vector, call the function like this :
 ```C
-VECMATVector4ScalarSum(v, r, v);
+VECMATVector3ScalarSum(v, r, v);
 ```

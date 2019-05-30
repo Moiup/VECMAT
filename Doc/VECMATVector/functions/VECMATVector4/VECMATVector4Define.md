@@ -5,7 +5,13 @@ Set all values of the vector to 0.
 
 ## **Declaration**
 ```C
-void VECMATVector4Define(VECMATVector4 v, float x, float y, float z, float w)
+void VECMATVector4Define(
+        VECMATVector4 v,
+        float x,
+        float y,
+        float z,
+        float w
+    )
 ```
 
 ## **Parameters**

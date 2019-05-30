@@ -1,13 +1,13 @@
-[Main menu](../../../../Readme.md)->[Doc](../../../VECMATKit.md)->[VECMATVector](../../VECMATVector.md)->[VECMATVector4](../../VECMATVector4.md)
+[Main menu](../../../../Readme.md)->[Doc](../../../VECMATKit.md)->[VECMATVector](../../VECMATVector.md)->[VECMATVector3](../../VECMATVector3.md)
 
-# VECMATVector4ScalarSub(\_,\_,\_)
+# VECMATVector3ScalarSub(\_,\_,\_)
 Substract a scalar to a vector.
 
 ## **Declaration**
 ```C
-VECMATVector4ScalarSub(
-        VECMATVector4 v,
-        VECMATVector4 res,
+VECMATVector3ScalarSub(
+        VECMATVector3 v,
+        VECMATVector3 res,
         float r
     )
 ```
@@ -15,10 +15,10 @@ VECMATVector4ScalarSub(
 
 ## **Parameters**
 **v**\
-A vector of size 4.
+A vector of size 3.
 
 **res**\
-The vector of size 4 where the result will be stored.
+The vector of size 3 where the result will be stored.
 
 **r**\
 The real value to substract to the vector `v`.
@@ -29,5 +29,5 @@ The substraction of `r` to the vector `v`stored in `res`
 ## **How to**
 If you don't want to store the result in a new vector, call the function like this :
 ```C
-VECMATVector4ScalarSub(v, r, v);
+VECMATVector3ScalarSub(v, r, v);
 ```

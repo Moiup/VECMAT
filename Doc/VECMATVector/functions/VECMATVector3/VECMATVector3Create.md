@@ -1,11 +1,11 @@
-[Main menu](../../../../Readme.md)->[Doc](../../../VECMATKit.md)->[VECMATVector](../../VECMATVector.md)->[VECMATVector2](../../VECMATVector2.md)
+[Main menu](../../../../Readme.md)->[Doc](../../../VECMATKit.md)->[VECMATVector](../../VECMATVector.md)->[VECMATVector3](../../VECMATVector3.md)
 
-# VECMATVector2Create(\_,\_,\_,\_,\_)
+# VECMATVector3Create(\_,\_,\_,\_,\_)
 Create a vector with the coordinates of the two given points.
 
 ## **Declaration**
 ```C
-void VECMATVector2Create(
+void VECMATVector3Create(
         float p1X,
         float p1Y,
         float p1Z,
@@ -19,7 +19,7 @@ void VECMATVector2Create(
 
 ## **Parameters**
 **v**\
-The vector of size 4 to work with.
+The vector of size 3 to work with.
 
 **p1X**\
 The _x_ coordinate of the first point.
@@ -40,4 +40,4 @@ The _y_ coordinate of the second point.
 The _z_ coordinate of the second point.
 
 ## **Result**
-The vector `v` with coodinates calculated with _p1_ and _p2_. The _w_ coordinate is set to 1.
+The vector `v` with coodinates calculated with _p1_ and _p2_.

@@ -1,25 +1,25 @@
-[Main menu](../../../../Readme.md)->[Doc](../../../VECMATKit.md)->[VECMATVector](../../VECMATVector.md)->[VECMATVector4](../../VECMATVector4.md)
+[Main menu](../../../../Readme.md)->[Doc](../../../VECMATKit.md)->[VECMATVector](../../VECMATVector.md)->[VECMATVector3](../../VECMATVector3.md)
 
-# VECMATVector4CreateNormalized(\_,\_,\_,\_,\_)
+# VECMATVector3CreateNormalized(\_,\_,\_,\_,\_)
 Create a normalized vector with the coordinates of the two given points.
 
 ## **Declaration**
 ```C
-void VECMATVector4CreateNormalized(
+void VECMATVector3CreateNormalized(
         float p1X,
         float p1Y,
         float p1Z,
         float p2X,
         float p2Y,
         float p2Z,
-        VECMATVector4 v
+        VECMATVector3 v
     )
 ```
 
 
 ## **Parameters**
 **v**\
-The vector of size 4 to work with.
+The vector of size 3 to work with.
 
 **p1X**\
 The _x_ coordinate of the first point.
@@ -40,4 +40,4 @@ The _y_ coordinate of the second point.
 The _z_ coordinate of the second point.
 
 ## **Result**
-The vector `v` with the normalized coodinates calculated with _p1_ and _p2_. The _w_ coordinate is set to 1.
+The vector `v` with the normalized coodinates calculated with _p1_ and _p2_.

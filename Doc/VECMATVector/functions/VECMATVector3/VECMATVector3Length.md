@@ -1,17 +1,17 @@
-[Main menu](../../../../Readme.md)->[Doc](../../../VECMATKit.md)->[VECMATVector](../../VECMATVector.md)->[VECMATVector4](../../VECMATVector4.md)
+[Main menu](../../../../Readme.md)->[Doc](../../../VECMATKit.md)->[VECMATVector](../../VECMATVector.md)->[VECMATVector3](../../VECMATVector3.md)
 
-# VECMATVector4Length(\_)
+# VECMATVector3Length(\_)
 Return the length of the vector.
 
 ## **Declaration**
 ```C
-void VECMATVector4Length(VECMATVector4 v)
+void VECMATVector3Length(VECMATVector3 v)
 ```
 
 
 ## **Parameter**
 **v**\
-The vector of size 4 to calulate its length.
+The vector of size 3 to calulate its length.
 
 ## **Return**
 The length of vector `v`.

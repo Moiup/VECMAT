@@ -1,17 +1,17 @@
-[Main menu](../../../../Readme.md)->[Doc](../../../VECMATKit.md)->[VECMATVector](../../VECMATVector.md)->[VECMATVector4](../../VECMATVector4.md)
+[Main menu](../../../../Readme.md)->[Doc](../../../VECMATKit.md)->[VECMATVector](../../VECMATVector.md)->[VECMATVector3](../../VECMATVector3.md)
 
-# VECMATVector4Normalize(\_)
+# VECMATVector3Normalize(\_)
 Normalize the vector.
 
 ## **Declaration**
 ```C
-void VECMATVector4Normalize(VECMATVector4 v)
+void VECMATVector3Normalize(VECMATVector3 v)
 ```
 
 
 ## **Parameter**
 **v**\
-The vector of size 4 to normalize.
+The vector of size 3 to normalize.
 
 ## **Result**
 The vector `v` normalized
