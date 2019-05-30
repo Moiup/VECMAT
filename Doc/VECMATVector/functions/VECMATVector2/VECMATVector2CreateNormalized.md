@@ -11,7 +11,7 @@ void VECMATVector2CreateNormalized(
         float p2X,
         float p2Y,
         VECMATVector2 v
-    );
+    )
 ```
 
 
