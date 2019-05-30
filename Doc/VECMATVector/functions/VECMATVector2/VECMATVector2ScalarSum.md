@@ -21,7 +21,7 @@ A vector of size 2.
 The vector of size 2 where the result will be stored.
 
 **r**\
-The real value to add to the vector.
+The real value to add to the vector `v`.
 
 ## **Result**
 The sum of `r` to the vector `v`stored in `res`
