@@ -1,9 +1,6 @@
-# **VECMATVector 2**
-### Menu
-* [Main menu](../../Readme.md) : Back to the main menu
-* [Doc](../VECMATKit.md) : Back to the doc title page
-* [VECMATVector](VECMATVector.md) : Back to the VECMATVector page
+[Main menu](../../Readme.md)->[Doc](../VECMATKit.md)->[VECMATVector](VECMATVector.md)
 
+# **VECMATVector 2**
 ## **Type**
 
 ```C
@@ -16,7 +13,7 @@ _____________
 ```C
 void VECMATVector2Zero(VECMATVector2);
 ```
-Set all values of the vector to 0.
+Set all values of the vector to 0. [More here.](./functions/VECMATVector2/VECMATVector2Zero.md)
 
 ```C
 void VECMATVector2Define(VECMATVector2, float, float);
@@ -35,6 +32,7 @@ Create a normalized vector with the coordinates of the two given points.
 
 ________________
 ## **Calculus**
+
 
 ```C
 void VECMATVector2Normalize(VECMATVector2);

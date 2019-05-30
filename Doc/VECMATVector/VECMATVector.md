@@ -1,9 +1,6 @@
+[Main menu](../../Readme.md)->[Doc](../VECMATKit.md)
+
 # VECMATVector
-### Menu
-* [Main menu](../../Readme.md) : Back to the main menu
-* [Doc](../VECMATKit.md) : Back to the doc title page
-
-
 ## Description
 
 A vector is an array of a given size.
