@@ -11,7 +11,7 @@ void VECMATVector2Zero(VECMATVector2 v)
 
 ## **Parameter**
 **v**\
-The vector of size 2 to work width.
+The vector of size 2 to work with.
 
 ## **Result**
 All the values of `v` will be 0.

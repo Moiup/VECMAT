@@ -5,13 +5,19 @@ Set all values of the vector to 0.
 
 ## **Declaration**
 ```C
-void VECMATVector2Zero(VECMATVector2 V)
+void VECMATVector2Define(VECMATVector2 v, float x, float y)
 ```
 
 
-## **Parameter**
+## **Parameters**
 **v**\
-The vector of size 2 to work width.
+The vector of size 2 to work with.
+
+**x**\
+The new `x` value.
+
+**y**\
+Tne new `y` value.
 
 ## **Result**
-All the values of `v` will be 0.
+The vector `v` with the value `x` and `y`.
