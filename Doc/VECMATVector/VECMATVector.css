@@ -1,0 +1,18 @@
+.part1
+{
+    display: flex;
+    justify-content: flex-start;
+}
+.col-gauche
+{
+    width: 200px;
+}
+.col-gauche span
+{
+    margin:0;
+    padding:0;
+    font-size: 20px;
+}
+.col-droite
+{
+}

@@ -17,7 +17,7 @@ The VECMAT library gots 3 main parts.
 
 * [Vector](./Doc/VECMATVector/VECMATVector.md)
 * [Matrix](./Doc/VECMATMatrix/VECMATMatrix.md)
-* ["Gl Kit"](./Doc/VECMATGlkit/VECMATGlkit.md)
+* [VECMAT Gl Kit](./Doc/VECMATGlkit/VECMATGlkit.md)
 
 ## [Vector](./Doc/VECMATVector/VECMATVector.md)
 
@@ -39,8 +39,8 @@ Each matrix type contains the same functions (adapted for each size). There are 
 * [VECMATMatrix3](VECMATMatrix3.md) : matrix of size 3
 * [VECMATMatrix4](VECMATMatrix4.md) : matrix of size 4
 
-## [GL Kit](./Doc/VECMATGlkit/VECMATGlkit.md)
+## [VECMAT Gl Kit](./Doc/VECMATGlkit/VECMATGlkit.md)
 
-Contains 
+Contains a set of functions for creating the matrixes used by OpenGL.
 
-* [VECMATGlkit](./Doc/VECMATGlkit/ECMATGlkit.md) : A set of functions for creating the matrixes used by OpenGL.
+* [VECMATGlkit](./Doc/VECMATGlkit/ECMATGlkit.md)
