@@ -14,4 +14,4 @@ void VECMATVector2Zero(VECMATVector2 v)
 The vector of size 2 to work with.
 
 ## **Result**
-All the values of `v` will be 0.
+All the values of `v` set to 0.
