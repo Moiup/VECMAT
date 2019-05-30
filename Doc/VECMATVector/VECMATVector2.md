@@ -6,7 +6,7 @@
 ```C
 VECMATVector2
 ```
-A vector of size 2.
+Vector of size 2.
 _____________
 ## **Creation**
 

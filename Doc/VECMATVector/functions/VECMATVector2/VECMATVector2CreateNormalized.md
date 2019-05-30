@@ -19,16 +19,16 @@ void VECMATVector2CreateNormalized(
 **v**\
 The vector of size 2 to work with.
 
-**p1x**\
+**p1X**\
 The _x_ coordinate of the first point.
 
-**p1y**\
+**p1Y**\
 The _y_ coordinate of the first point.
 
-**p2x**\
+**p2X**\
 The _x_ coordinate of the second point.
 
-**p2y**\
+**p2Y**\
 The _y_ coordinate of the second point.
 
 ## **Result**
