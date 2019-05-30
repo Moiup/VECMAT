@@ -1,17 +1,17 @@
 [Main menu](../../../../Readme.md)->[Doc](../../../VECMATKit.md)->[VECMATVector](../../VECMATVector.md)->[VECMATVector2](../../VECMATVector2.md)
 
-# VECMATVector2Create(\_,\_,\_,\_,\_)
-Create a vector with the coordinates of the two given points.
+# VECMATVector2CreateNormalized(\_,\_,\_,\_,\_)
+Create a normalized vector with the coordinates of the two given points.
 
 ## **Declaration**
 ```C
-void VECMATVector2Create(
+void VECMATVector2CreateNormalized(
         float p1X,
         float p1Y,
         float p2X,
         float p2Y,
         VECMATVector2 v
-    )
+    );
 ```
 
 
@@ -32,4 +32,4 @@ The _x_ coordinate of the second point.
 The _y_ coordinate of the second point.
 
 ## **Result**
-The vector `v` with coodinate calculated with _p1_ and _p2_.
+The vector `v` with the normalized coodinate calculated with _p1_ and _p2_.
