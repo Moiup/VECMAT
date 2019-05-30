@@ -1,11 +1,11 @@
-[Main menu](../../../../Readme.md)->[Doc](../../../VECMATKit.md)->[VECMATVector](../../VECMATVector.md)->[VECMATVector3](../../VECMATVector3.md)
+[Main menu](../../../../Readme.md)->[Doc](../../../VECMATKit.md)->[VECMATVector](../../VECMATVector.md)->[VECMATVector2](../../VECMATVector2.md)
 
-# VECMATVector3Create(\_,\_,\_,\_,\_)
+# VECMATVector2Create(\_,\_,\_,\_,\_)
 Create a vector with the coordinates of the two given points.
 
 ## **Declaration**
 ```C
-void VECMATVector3Create(
+void VECMATVector2Create(
         float p1X,
         float p1Y,
         float p1Z,
