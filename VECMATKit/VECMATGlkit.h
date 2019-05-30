@@ -71,6 +71,11 @@ void VECMATMatrix4CreateRotationY(VECMATMatrix4 m, float angle);
 void VECMATMatrix4CreateRotationZ(VECMATMatrix4 m, float angle);
 
 /**
+ * Put in `projection` the matrix of the Orhtographic projection
+*/
+void VECMATMatrix4ProjectionOrtho(float left, float right, float bottom, float top, float nearZ, float farZ, VECMATMatrix4 projection);
+
+/**
  * Put in `projection` the matrix of the Perspective projection
  * 
  * `angle` is the angle in degree

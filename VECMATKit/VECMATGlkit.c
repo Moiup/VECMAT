@@ -222,6 +222,37 @@ void VECMATMatrix4CreateRotationZ(VECMATMatrix4 m, float angle)
     m[3][3] = 1;
 }
 
+/**
+ * Put in `projection` the matrix of the Orhtographic projection
+*/
+void VECMATMatrix4ProjectionOrtho(float left, float right, float bottom, float top, float nearZ, float farZ, VECMATMatrix4 projection)
+{
+    float r_l = right - left;
+    float t_b = top - bottom;
+    float f_n = farZ - nearZ;
+
+    // First line
+    projection[0][0] = 2 / r_l;
+    projection[0][1] = 0;
+    projection[0][2] = 0;
+    projection[0][3] = 0;
+    // Second line
+    projection[1][0] = 0;
+    projection[1][1] = 2 / t_b;
+    projection[1][2] = 0;
+    projection[1][3] = 0;
+    // Third line
+    projection[2][0] = 0;
+    projection[2][1] = 0;
+    projection[2][2] = -2 / (f_n);
+    projection[2][3] = 0;
+    // Fourth line
+    projection[3][0] = (-right - left) / r_l;
+    ;
+    projection[3][1] = (-top - bottom) / t_b;
+    projection[3][2] = (-farZ - nearZ) / f_n;
+    projection[3][3] = 1;
+}
 
 /**
  * Put in `projection` the matrix of the Perspective projection
@@ -256,7 +287,6 @@ void VECMATMatrix4ProjectionPerspective(float ratio, float angle, float Znear, f
     projection[3][3] = 0.0f;
 }
 
-
 /**
  * Put in `look` the resulting look at matrix
  * 
@@ -270,15 +300,13 @@ void VECMATMatrix4LookAt(float Cx, float Cy, float Cz, float Tx, float Ty, float
     VECMATVector3 u;
 
     VECMATVector3 up = {
-        Ux, Uy, Uz
-    };
-
+        Ux, Uy, Uz};
 
     VECMATVector3CreateNormalized(Tx, Ty, Tz, Cx, Cy, Cz, f);
     VECMATVector3NormalVector(up, f, l);
     VECMATVector3Normalize(l);
     VECMATVector3NormalVector(f, l, u);
-  
+
     look[0][0] = l[0];
     look[1][0] = l[1];
     look[2][0] = l[2];
