@@ -11,12 +11,12 @@ _____________
 ## **Creation**
 
 ```C
-void VECMATVector2Zero(VECMATVector2);
+void VECMATVector2Zero(VECMATVector2)
 ```
 Set all values of the vector to 0. [More here.](./functions/VECMATVector2/VECMATVector2Zero.md)
 
 ```C
-void VECMATVector2Define(VECMATVector2, float, float);
+void VECMATVector2Define(VECMATVector2, float, float)
 ```
 Set the vector with the given value. [More here.](./functions/VECMATVector2/VECMATVector2Define.md)
 
