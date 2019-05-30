@@ -9,7 +9,7 @@ void VECMATVector2Normalize(VECMATVector2 v)
 ```
 
 
-## **Parameters**
+## **Parameter**
 **v**\
 The vector of size 2 to normalize.
 
