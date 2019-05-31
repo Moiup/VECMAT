@@ -100,3 +100,67 @@ void VECMATMatrix2Mult(VECMATMatrix2 m1, VECMATMatrix2 m2, VECMATMatrix2 res)
     res[1][0] = m1[1][0] * m2[0][0] + m1[1][1] * m2[1][0];
     res[1][1] = m1[1][0] * m2[0][1] + m1[1][1] * m2[1][1];
 }
+
+/**
+ * Add a scalar to a matrix (result is in res)
+ * 
+ * If you don't want to store the result in a new matrix, call the function like this :
+ *      VECMATMatrix2ScalarSum(m, m, r);
+*/
+void VECMATMatrix2ScalarSum(VECMATMatrix2 m, VECMATMatrix2 res, float r)
+{
+    // First line
+    res[0][0] = m[0][0] + r;
+    res[0][1] = m[0][1] + r;
+    // Second line
+    res[1][0] = m[1][0] + r;
+    res[1][1] = m[1][1] + r;
+}
+
+/**
+ * Substract a scalar to a matrix (result is in res)
+ * 
+ * If you don't want to store the result in a new matrix, call the function like this :
+ *      VECMATMatrix2ScalarSub(m, m, r);
+*/
+void VECMATMatrix2ScalarSub(VECMATMatrix2 m, VECMATMatrix2 res, float r)
+{
+    // First line
+    res[0][0] = m[0][0] - r;
+    res[0][1] = m[0][1] - r;
+    // Second line
+    res[1][0] = m[1][0] - r;
+    res[1][1] = m[1][1] - r;
+}
+
+/**
+ * Multiply a matrix by a scalar (result is in res)
+ * 
+ * If you don't want to store the result in a new matrix, call the function like this :
+ *      VECMATMatrix2ScalarMult(m, m, r);
+*/
+void VECMATMatrix2ScalarMult(VECMATMatrix2 m, VECMATMatrix2 res, float r)
+{
+    // First line
+    res[0][0] = m[0][0] * r;
+    res[0][1] = m[0][1] * r;
+    // Second line
+    res[1][0] = m[1][0] * r;
+    res[1][1] = m[1][1] * r;
+}
+
+/**
+ * Divide a matrix by a scalar (result is in res)
+ * 
+ * If you don't want to store the result in a new matrix, call the function like this :
+ *      VECMATMatrix2ScalarDivide(m, m, r);
+*/
+void VECMATMatrix2ScalarDivide(VECMATMatrix2 m, VECMATMatrix2 res, float r)
+{
+    // First line
+    res[0][0] = m[0][0] / r;
+    res[0][1] = m[0][1] / r;
+    // Second line
+    res[1][0] = m[1][0] / r;
+    res[1][1] = m[1][1] / r;
+}

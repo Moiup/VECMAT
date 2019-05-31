@@ -137,4 +137,92 @@ void VECMATMatrix3Mult(VECMATMatrix3 m1, VECMATMatrix3 m2, VECMATMatrix3 res)
     res[2][2] = m1[2][0] * m2[0][2] + m1[2][1] * m2[1][2] + m1[2][2] * m2[2][2];
 }
 
+/**
+ * Add a scalar to a matrix (result is in res)
+ * 
+ * If you don't want to store the result in a new matrix, call the function like this :
+ *      VECMATMatrix3ScalarSum(m, m, r);
+*/
+void VECMATMatrix3ScalarSum(VECMATMatrix3 m, VECMATMatrix3 res, float r)
+{
+    // First line
+    res[0][0] = m[0][0] + r;
+    res[0][1] = m[0][1] + r;
+    res[0][2] = m[0][2] + r;
+    // Second line
+    res[1][0] = m[1][0] + r;
+    res[1][1] = m[1][1] + r;
+    res[1][2] = m[1][2] + r;
+    // Third line
+    res[2][0] = m[2][0] + r;
+    res[2][1] = m[2][1] + r;
+    res[2][2] = m[2][2] + r;
+}
+
+/**
+ * Substract a scalar to a matrix (result is in res)
+ * 
+ * If you don't want to store the result in a new matrix, call the function like this :
+ *      VECMATMatrix3ScalarSub(m, m, r);
+*/
+void VECMATMatrix3ScalarSub(VECMATMatrix3 m, VECMATMatrix3 res, float r)
+{
+    // First line
+    res[0][0] = m[0][0] - r;
+    res[0][1] = m[0][1] - r;
+    res[0][2] = m[0][2] - r;
+    // Second line
+    res[1][0] = m[1][0] - r;
+    res[1][1] = m[1][1] - r;
+    res[1][2] = m[1][2] - r;
+    // Third line
+    res[2][0] = m[2][0] - r;
+    res[2][1] = m[2][1] - r;
+    res[2][2] = m[2][2] - r;
+}
+
+/**
+ * Multiply a matrix by a scalar (result is in res)
+ * 
+ * If you don't want to store the result in a new matrix, call the function like this :
+ *      VECMATMatrix4ScalarMult(m, m, r);
+*/
+void VECMATMatrix3ScalarMult(VECMATMatrix3 m, VECMATMatrix3 res, float r)
+{
+    // First line
+    res[0][0] = m[0][0] * r;
+    res[0][1] = m[0][1] * r;
+    res[0][2] = m[0][2] * r;
+    // Second line
+    res[1][0] = m[1][0] * r;
+    res[1][1] = m[1][1] * r;
+    res[1][2] = m[1][2] * r;
+    // Third line
+    res[2][0] = m[2][0] * r;
+    res[2][1] = m[2][1] * r;
+    res[2][2] = m[2][2] * r;
+}
+
+/**
+ * Divide a matrix by a scalar (result is in res)
+ * 
+ * If you don't want to store the result in a new matrix, call the function like this :
+ *      VECMATMatrix3ScalarDivide(m, m, r);
+*/
+void VECMATMatrix3ScalarDivide(VECMATMatrix3 m, VECMATMatrix3 res, float r)
+{
+    // First line
+    res[0][0] = m[0][0] / r;
+    res[0][1] = m[0][1] / r;
+    res[0][2] = m[0][2] / r;
+    // Second line
+    res[1][0] = m[1][0] / r;
+    res[1][1] = m[1][1] / r;
+    res[1][2] = m[1][2] / r;
+    // Third line
+    res[2][0] = m[2][0] / r;
+    res[2][1] = m[2][1] / r;
+    res[2][2] = m[2][2] / r;
+}
+
 

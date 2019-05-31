@@ -67,5 +67,36 @@ void VECMATMatrix3Sub(VECMATMatrix3 m1, VECMATMatrix3 m2, VECMATMatrix3 res);
 */
 void VECMATMatrix3Mult(VECMATMatrix3 m1, VECMATMatrix3 m2, VECMATMatrix3 res);
 
+/**
+ * Add a scalar to a matrix (result is in res)
+ * 
+ * If you don't want to store the result in a new matrix, call the function like this :
+ *      VECMATMatrix3ScalarSum(m, m, r);
+*/
+void VECMATMatrix3ScalarSum(VECMATMatrix3 m, VECMATMatrix3 res, float r);
+
+/**
+ * Substract a scalar to a matrix (result is in res)
+ * 
+ * If you don't want to store the result in a new matrix, call the function like this :
+ *      VECMATMatrix3ScalarSub(m, m, r);
+*/
+void VECMATMatrix3ScalarSub(VECMATMatrix3 m, VECMATMatrix3 res, float r);
+
+/**
+ * Multiply a matrix by a scalar (result is in res)
+ * 
+ * If you don't want to store the result in a new matrix, call the function like this :
+ *      VECMATMatrix3ScalarMult(m, m, r);
+*/
+void VECMATMatrix3ScalarMult(VECMATMatrix3 m, VECMATMatrix3 res, float r);
+
+/**
+ * Divide a matrix by a scalar (result is in res)
+ * 
+ * If you don't want to store the result in a new matrix, call the function like this :
+ *      VECMATMatrix3ScalarDivide(m, m, r);
+*/
+void VECMATMatrix3ScalarDivide(VECMATMatrix3 m, VECMATMatrix3 res, float r);
 
 #endif
