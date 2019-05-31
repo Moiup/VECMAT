@@ -83,6 +83,11 @@ void VECMATMatrix4ProjectionOrtho(float left, float right, float bottom, float t
 void VECMATMatrix4ProjectionPerspective(float ratio, float angle, float Znear, float Zfar, VECMATMatrix4 projection);
 
 /**
+ * Put in `projection` the matrix of the Frustum projection
+*/
+void VECMATMatrix4ProjectionFrustum(float left, float right, float bottom, float top, float nearZ, float farZ, VECMATMatrix4 projection);
+
+/**
  * Put in `look` the resulting look at matrix
  * 
  * How this matrix is calculated :

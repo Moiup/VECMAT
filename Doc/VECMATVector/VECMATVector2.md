@@ -1,6 +1,6 @@
 [Main menu](../../Readme.md)->[Doc](../VECMATKit.md)->[VECMATVector](VECMATVector.md)
 
-# **VECMATVector 2**
+# **VECMATVector2**
 ## **Type**
 
 ```C

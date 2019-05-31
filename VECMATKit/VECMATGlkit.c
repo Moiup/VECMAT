@@ -248,7 +248,6 @@ void VECMATMatrix4ProjectionOrtho(float left, float right, float bottom, float t
     projection[2][3] = 0;
     // Fourth line
     projection[3][0] = (-right - left) / r_l;
-    ;
     projection[3][1] = (-top - bottom) / t_b;
     projection[3][2] = (-farZ - nearZ) / f_n;
     projection[3][3] = 1;
@@ -285,6 +284,38 @@ void VECMATMatrix4ProjectionPerspective(float ratio, float angle, float Znear, f
     projection[1][3] = 0.0f;
     projection[2][3] = -1.0f;
     projection[3][3] = 0.0f;
+}
+
+/**
+ * Put in `projection` the matrix of the Frustum projection
+*/
+void VECMATMatrix4ProjectionFrustum(float left, float right, float bottom, float top, float nearZ, float farZ, VECMATMatrix4 projection)
+{
+    float _2xN = 2 * nearZ;
+    float r_l = right - left;
+    float t_b = top - bottom;
+    float n_f = nearZ - farZ;
+
+    // First line
+    projection[0][0] = _2xN / r_l;
+    projection[0][1] = 0;
+    projection[0][2] = 0;
+    projection[0][3] = 0;
+    // Second line
+    projection[1][0] = 0;
+    projection[1][1] = _2xN / t_b;
+    projection[1][2] = 0;
+    projection[1][3] = 0;
+    // Third line
+    projection[2][0] = (right + left) / r_l;
+    projection[2][1] = (top + bottom) / t_b;
+    projection[2][2] = (farZ + nearZ) / n_f;
+    projection[2][3] = -1;
+    // Fourth line
+    projection[3][0] = 0;
+    projection[3][1] = 0;
+    projection[3][2] = (_2xN * farZ)/ n_f;
+    projection[3][3] = 0;
 }
 
 /**
