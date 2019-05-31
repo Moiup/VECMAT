@@ -4,79 +4,59 @@
 ## **Type**
 
 ```C
-VECMATVector4
+VECMATMatrix4
 ```
-Vector of size 4. Has four coordinates : _x_, _y_, _z_ and _w_.
+Square matrix of size 4.
 _____________
 ## **Creation**
 
 ```C
-void VECMATVector4Zero(VECMATVector4)
+void VECMATMatrix4CreateMatrix(VECMATMatrix4, float, float, float , float, float, float, float, float, float, float, float, float, float, float, float, float)
 ```
-Set all values of the vector to 0. [More here.](./functions/VECMATVector4/VECMATVector4Zero.md)
+Set the matrix with the given values. [More here.](./functions/VECMATMatrix4/VECMATMatrix4CreateMatrix.md)
 
 ```C
-void VECMATVector4Define(VECMATVector4, float, float, float, float)
+void VECMATMatrix4Zero(VECMATMatrix4)
 ```
-Set the vector with the given value. [More here.](./functions/VECMATVector4/VECMATVector4Define.md)
-
-```C
-void VECMATVector4Create(float, float, float, float, float, float, VECMATVector4)
-```
-Create a vector with the coordinates of the two given points. [More here.](./functions/VECMATVector4/VECMATVector4Create.md)
-
-```C
-void VECMATVector4CreateNormalized(float, float, float, float, float, float, VECMATVector4)
-```
-Create a normalized vector with the coordinates of the two given points. [More here.](./functions/VECMATVector4/VECMATVector4CreateNormalized.md)
-
-________________
-## **Calculus**
+Set all values of the matrix to 0. [More here.](./functions/VECMATMatrix4/VECMATMatrix4Zero.md)
 
 
 ```C
-void VECMATVector4Normalize(VECMATVector4)
+void VECMATMatrix4Identity(VECMATMatrix4)
+```
+Set the matrix as an identity matrix. [More here.](./functions/VECMATMatrix4/VECMATMatrix4Identity.md)
+
+```C
+void VECMATMatrix4Sum(VECMATMatrix4, VECMATMatrix4, VECMATMatrix4)
+```
+Do the sum of two matrices. [More here.](./functions/VECMATMatrix4/VECMATMatrix4Sum.md)
+
+```C
+void VECMATMatrix4Sub(VECMATMatrix4, VECMATMatrix4, VECMATMatrix4)
+```
+Do the substraction of two matrix. [More here.](./functions/VECMATMatrix4/VECMATMatrix4Sub.md)
+
+```C
+void VECMATMatrix4Mult(VECMATMatrix4, VECMATMatrix4, VECMATMatrix4)
+```
+Do the multiplication of two matrix. [More here.](./functions/VECMATMatrix4/VECMATMatrix4Sub.md)
+
+```C
+void VECMATMatrix4ScalarSum(VECMATMatrix4, VECMATMatrix4, float)
+```
+Add a scalar to a matrix. [More here.](./functions/VECMATMatrix4/VECMATMatrix4ScalarSum.md)
+
+```C
+void VECMATMatrix4ScalarSub(VECMATMatrix4, VECMATMatrix4, float)
+```
+Substract a scalar to a matrix. [More here.](./functions/VECMATVector4/VECMATMatrix4ScalarSub.md)
+
+```C
+void VECMATMatrix4ScalarMult(VECMATMatrix4, VECMATMatrix4, float)
 ````
-Normalize the vector. [More here.](./functions/VECMATVector4/VECMATVector4Normalize.md)
+Multiply a matrix by a scalar. [More here.](./functions/VECMATMatrix4/VECMATMatrix4ScalarMult.md)
 
 ```C
-float VECMATVector4Length(VECMATVector4)
+void VECMATMatrix4ScalarDivide(VECMATMatrix4, VECMATMatrix4, float)
 ```
-Return the length of the vector. [More here.](./functions/VECMATVector4/VECMATVector4Length.md)
-
-
-```C
-void VECMATVector4CrossProduct(VECMATVector4, VECMATVector4, VECMATVector4)
-```
-Do the cross product of two vectors. [More here.](./functions/VECMATVector4/VECMATVector4CrossProduct.md)
-
-
-```C
-void VECMATVector4Sum(VECMATVector4, VECMATVector4, VECMATVector4)
-```
-Do the sum of two vectors. [More here.](./functions/VECMATVector4/VECMATVector4Sum.md)
-
-```C
-void VECMATVector4Sub(VECMATVector4, VECMATVector4, VECMATVector4)
-```
-Do the substraction of two vectors. [More here.](./functions/VECMATVector4/VECMATVector4Sub.md)
-
-```C
-void VECMATVector4ScalarSum(VECMATVector4, VECMATVector4, float)
-```
-Add a scalar to a vector. [More here.](./functions/VECMATVector4/VECMATVector4ScalarSum.md)
-
-```C
-void VECMATVector4ScalarSub(VECMATVector4, VECMATVector4, float)
-```
-Substract a scalar to a vector. [More here.](./functions/VECMATVector4/VECMATVector4ScalarSub.md)
-
-```C
-void VECMATVector4ScalarMult(VECMATVector4, VECMATVector4, float)
-````
-Multiply a vector by a scalar. [More here.](./functions/VECMATVector4/VECMATVector4ScalarMult.md)
-
-```C
-void VECMATVector4ScalarDivide(VECMATVector4, VECMATVector4, float)
-```
-Divide a vector by a scalar. [More here.](./functions/VECMATVector4/VECMATVector4ScalarDivide.md)
+Divide a matrix by a scalar. [More here.](./functions/VECMATMatrix4/VECMATMatrix4ScalarDivide.md)

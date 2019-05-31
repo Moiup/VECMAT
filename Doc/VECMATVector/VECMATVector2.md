@@ -18,7 +18,7 @@ Set all values of the vector to 0. [More here.](./functions/VECMATVector2/VECMAT
 ```C
 void VECMATVector2Define(VECMATVector2, float, float)
 ```
-Set the vector with the given value. [More here.](./functions/VECMATVector2/VECMATVector2Define.md)
+Set the vector with the given values. [More here.](./functions/VECMATVector2/VECMATVector2Define.md)
 
 ```C
 void VECMATVector2Create(float, float, float, float, VECMATVector2)
