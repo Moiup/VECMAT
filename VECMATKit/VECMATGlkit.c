@@ -334,9 +334,9 @@ void VECMATMatrix4LookAt(float Cx, float Cy, float Cz, float Tx, float Ty, float
         Ux, Uy, Uz};
 
     VECMATVector3CreateNormalized(Tx, Ty, Tz, Cx, Cy, Cz, f);
-    VECMATVector3NormalVector(up, f, l);
+    VECMATVector3CrossProduct(up, f, l);
     VECMATVector3Normalize(l);
-    VECMATVector3NormalVector(f, l, u);
+    VECMATVector3CrossProduct(f, l, u);
 
     look[0][0] = l[0];
     look[1][0] = l[1];
