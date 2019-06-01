@@ -29,7 +29,7 @@ void VECMATMatrix4CreateMatrix(
 
 ## **Parameters**
 **m**  
-The 4x4 matrix to set its values.
+A 4x4 matrix.
 
 **m00**  
 The value found at the first line first column.

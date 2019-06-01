@@ -11,7 +11,7 @@ void VECMATMatrix4Identity(VECMATMatrix4 m)
 
 ## **Parameter**
 **m**  
-The 4x4 matrix to set its values.
+A 4x4 matrix.
 
 
 ## **Result**

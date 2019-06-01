@@ -15,13 +15,13 @@ void VECMATMatrix4ScalarMult(
 
 ## **Parameters**
 **m**  
-The matrix to work with.
+A 4x4  matrix.
 
 **r**  
 The real value that will multiply the matrix `m`
 
 **res**  
-The resulting matrix.
+The resulting 4x4 matrix.
 
 
 ## **Result**

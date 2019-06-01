@@ -15,13 +15,13 @@ void VECMATMatrix4Sum
 
 ## **Parameters**
 **m1**  
-A matrix.
+A 4x4 matrix.
 
 **m2**  
-A matrix.
+A 4x4 matrix.
 
 **res**  
-The resulting matrix.
+The resulting 4x4 matrix.
 
 
 ## **Result**

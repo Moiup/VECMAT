@@ -15,13 +15,13 @@ void VECMATMatrix4Mult(
 
 ## **Parameters**
 **m1**  
-The multiplier matrix.
+The 4x4 multiplier matrix.
 
 **m2**  
-The multiplicand matrix.
+The 4x4 multiplicand matrix.
 
 **res**  
-The resulting matrix.
+The resulting 4x4 matrix.
 
 
 ## **Result**
