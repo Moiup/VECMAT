@@ -28,6 +28,7 @@ The substraction of `r` to the vector `v`stored in `res`
 
 ## **How to**
 If you don't want to store the result in a new vector, call the function like this :
+
 ```C
 VECMATVector4ScalarSub(v, r, v);
 ```

@@ -28,10 +28,12 @@ The substraction of `v1` by `v2` in `res`
 
 ## **How to**
 If you don't want to store the result in a new vector, call the function like this :
+
 ```C
 VECMATVector4Sub(v1, v2, v1);
 ```
 or
+
 ```C
 VECMATVector4Sub(v1, v2, v2);
 ```

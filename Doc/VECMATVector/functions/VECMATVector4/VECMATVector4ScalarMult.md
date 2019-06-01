@@ -28,6 +28,7 @@ The multiplication of the vector `v` by the real `r` stored in `res`
 
 ## **How to**
 If you don't want to store the result in a new vector, call the function like this :
+
 ```C
 VECMATVector4ScalarMult(v, r, v);
 ```
