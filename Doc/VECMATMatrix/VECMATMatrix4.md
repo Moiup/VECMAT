@@ -59,4 +59,6 @@ Multiply a matrix by a scalar. [More here.](./functions/VECMATMatrix4/VECMATMatr
 ```C
 void VECMATMatrix4ScalarDivide(VECMATMatrix4, VECMATMatrix4, float)
 ```
-Divide a matrix by a scalar. [More here.](./functions/VECMATMatrix4/VECMATMatrix4ScalarDivide.md)
+
+
+[More here.](./functions/VECMATMatrix4/VECMATMatrix4ScalarDivide.md)

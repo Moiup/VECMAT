@@ -1,6 +1,6 @@
 [Main menu](../../../../Readme.md)->[Doc](../../../VECMATKit.md)->[VECMATMatrix](../../VECMATMatrix.md)->[VECMATMatrix4](../../VECMATMatrix4.md)
 
-# VECMATMatrix4Identity
+# VECMATMatrix4Identity(\_)
 Set the matrix as an identity matrix.
 
 ## **Declaration**

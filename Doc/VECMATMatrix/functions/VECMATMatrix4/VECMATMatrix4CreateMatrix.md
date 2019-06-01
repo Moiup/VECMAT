@@ -1,6 +1,6 @@
 [Main menu](../../../../Readme.md)->[Doc](../../../VECMATKit.md)->[VECMATMatrix](../../VECMATMatrix.md)->[VECMATMatrix4](../../VECMATMatrix4.md)
 
-# VECMATMatrix4CreateMatrix
+# VECMATMatrix4CreateMatrix(\_,\_,\_,\_,\_,\_,\_,\_,\_,\_,\_,\_,\_,\_,\_,\_,\_)
 Set the matrix with the given values.
 
 ## **Declaration**
