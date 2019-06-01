@@ -20,7 +20,6 @@ void VECMATMatrix4Zero(VECMATMatrix4)
 ```
 Set all values of the matrix to 0. [More here.](./functions/VECMATMatrix4/VECMATMatrix4Zero.md)
 
-
 ```C
 void VECMATMatrix4Identity(VECMATMatrix4)
 ```
@@ -59,6 +58,4 @@ Multiply a matrix by a scalar. [More here.](./functions/VECMATMatrix4/VECMATMatr
 ```C
 void VECMATMatrix4ScalarDivide(VECMATMatrix4, VECMATMatrix4, float)
 ```
-
-
-[More here.](./functions/VECMATMatrix4/VECMATMatrix4ScalarDivide.md)
+Divide a matrix by a scalar. [More here.](./functions/VECMATMatrix4/VECMATMatrix4ScalarDivide.md)
