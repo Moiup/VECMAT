@@ -18,25 +18,25 @@ void VECMATVector4CreateNormalized(
 
 
 ## **Parameters**
-**v**\
+**v**  
 The vector of size 4 to work with.
 
-**p1X**\
+**p1X**  
 The _x_ coordinate of the first point.
 
-**p1Y**\
+**p1Y**  
 The _y_ coordinate of the first point.
 
-**p1Z**\
+**p1Z**  
 The _y_ coordinate of the first point.
 
-**p2X**\
+**p2X**  
 The _x_ coordinate of the second point.
 
-**p2Y**\
+**p2Y**  
 The _y_ coordinate of the second point.
 
-**p2Z**\
+**p2Z**  
 The _z_ coordinate of the second point.
 
 ## **Result**

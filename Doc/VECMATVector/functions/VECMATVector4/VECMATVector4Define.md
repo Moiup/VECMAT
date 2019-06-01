@@ -15,19 +15,19 @@ void VECMATVector4Define(
 ```
 
 ## **Parameters**
-**v**\
+**v**  
 The vector of size 2 to work with.
 
-**x**\
+**x**  
 The new `x` value.
 
-**y**\
+**y**  
 Tne new `y` value.
 
-**z**\
+**z**  
 The new `z` value.
 
-**w**\
+**w**  
 Tne new `w` value.
 
 ## **Result**

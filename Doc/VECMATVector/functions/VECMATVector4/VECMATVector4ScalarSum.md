@@ -14,13 +14,13 @@ VECMATVector4ScalarSum(
 
 
 ## **Parameters**
-**v**\
+**v**  
 A vector of size 4.
 
-**res**\
+**res**  
 The vector of size 4 where the result will be stored.
 
-**r**\
+**r**  
 The real value to add to the vector `v`.
 
 ## **Result**

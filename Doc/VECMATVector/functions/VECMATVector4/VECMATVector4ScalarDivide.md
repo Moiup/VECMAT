@@ -14,13 +14,13 @@ VECMATVector4ScalarDivide(
 
 
 ## **Parameters**
-**v**\
+**v**  
 A vector of size 4.
 
-**res**\
+**res**  
 The vector of size 4 where the result will be stored.
 
-**r**\
+**r**  
 The real value which will divide the vector `v`.
 
 ## **Result**

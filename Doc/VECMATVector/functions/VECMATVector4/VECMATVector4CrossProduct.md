@@ -14,13 +14,13 @@ void VECMATVector4CrossProduct(
 
 
 ## **Parameter**
-**v1**\
+**v1**  
 The first vector of size 4 used to calculate the cross product
 
-**v2**\
+**v2**  
 The second vector of size 4 used to calculate the cross product.
 
-**vn**\
+**vn**  
 The vector of size 4 where the cross product is stored.
 
 ## **Result**
