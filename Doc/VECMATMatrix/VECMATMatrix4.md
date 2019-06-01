@@ -53,7 +53,7 @@ Substract a scalar to a matrix. [More here.](./functions/VECMATVector4/VECMATMat
 
 ```C
 void VECMATMatrix4ScalarMult(VECMATMatrix4, VECMATMatrix4, float)
-````
+```
 Multiply a matrix by a scalar. [More here.](./functions/VECMATMatrix4/VECMATMatrix4ScalarMult.md)
 
 ```C

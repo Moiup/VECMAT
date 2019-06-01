@@ -73,7 +73,7 @@ Substract a scalar to a vector. [More here.](./functions/VECMATVector4/VECMATVec
 
 ```C
 void VECMATVector4ScalarMult(VECMATVector4, VECMATVector4, float)
-````
+```
 Multiply a vector by a scalar. [More here.](./functions/VECMATVector4/VECMATVector4ScalarMult.md)
 
 ```C

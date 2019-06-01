@@ -66,7 +66,7 @@ Substract a scalar to a vector. [More here.](./functions/VECMATVector2/VECMATVec
 
 ```C
 void VECMATVector2ScalarMult(VECMATVector2, VECMATVector2, float)
-````
+```
 Multiply a vector by a scalar. [More here.](./functions/VECMATVector2/VECMATVector2ScalarMult.md)
 
 ```C

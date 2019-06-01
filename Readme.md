@@ -24,6 +24,7 @@ The VECMAT library gots 3 main parts.
 A vector is an array of a given size.
 
 Each vectors' type contains the same functions (of course, they are adapted for each size). Thera are 3 kinds of vectors :
+
 * [VECMATVector2](./Doc/VECMATVector/VECMATVector2.md) : vector of size 2 (x, y)
 * [VECMATVector3](./Doc/VECMATVector/VECMATVector3.md) : vector of size 3 (x, y, z)
 * [VECMATVector4](./Doc/VECMATVector/VECMATVector4.md) : vector of size 4 (x, y, z, w)
@@ -35,6 +36,7 @@ An array of arrays, of a given size.
 All types of matrixes are square matrixes.
 
 Each matrix type contains the same functions (adapted for each size). There are 3 kinds of vectors :
+
 * [VECMATMatrix2](VECMATMatrix2.md) : matrix of size 2
 * [VECMATMatrix3](VECMATMatrix3.md) : matrix of size 3
 * [VECMATMatrix4](VECMATMatrix4.md) : matrix of size 4
@@ -42,5 +44,5 @@ Each matrix type contains the same functions (adapted for each size). There are 
 ## [VECMAT Gl Kit](./Doc/VECMATGlkit/VECMATGlkit.md)
 
 Contains a set of functions for creating the matrixes used by OpenGL.
-
+		
 * [VECMATGlkit](./Doc/VECMATGlkit/ECMATGlkit.md)
