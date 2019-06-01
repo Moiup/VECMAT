@@ -28,9 +28,9 @@ All types of matrixes are square matrixes.
 
 Each matrix type contains the same functions (adapted for each size). There are 3 kinds of vectors :
 
-* [VECMATMatrix2](VECMATMatrix2.md) : matrix of size 2
-* [VECMATMatrix3](VECMATMatrix3.md) : matrix of size 3
-* [VECMATMatrix4](VECMATMatrix4.md) : matrix of size 4
+* [VECMATMatrix2](./VECMATMatrix/VECMATMatrix2.md) : matrix of size 2
+* [VECMATMatrix3](./VECMATMatrix/VECMATMatrix3.md) : matrix of size 3
+* [VECMATMatrix4](./VECMATMatrix/VECMATMatrix4.md) : matrix of size 4
 
 ## [VECMAT Gl Kit](./VECMATGlkit/VECMATGlkit.md)
 
