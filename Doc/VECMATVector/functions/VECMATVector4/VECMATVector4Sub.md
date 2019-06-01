@@ -14,13 +14,13 @@ void VECMATVector4Sub(
 
 
 ## **Parameters**
-**v1**\
+**v1**  
 A vector of size 4.
 
-**v2**\
+**v2**  
 A vector of size 4.
 
-**res**\
+**res**  
 The vector of size 4 where the result will be stored.
 
 ## **Result**
