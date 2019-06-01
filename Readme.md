@@ -37,9 +37,9 @@ All types of matrixes are square matrixes.
 
 Each matrix type contains the same functions (adapted for each size). There are 3 kinds of vectors :
 
-* [VECMATMatrix2](./Doc/VECMATMatrix2.md) : matrix of size 2
-* [VECMATMatrix3](./Doc/VECMATMatrix3.md) : matrix of size 3
-* [VECMATMatrix4](./Doc/VECMATMatrix4.md) : matrix of size 4
+* [VECMATMatrix2](./Doc/VECMATMatrix/VECMATMatrix2.md) : matrix of size 2
+* [VECMATMatrix3](./Doc/VECMATMatrix/VECMATMatrix3.md) : matrix of size 3
+* [VECMATMatrix4](./Doc/VECMATMatrix/VECMATMatrix4.md) : matrix of size 4
 
 ## [VECMAT Gl Kit](./Doc/VECMATGlkit/VECMATGlkit.md)
 
