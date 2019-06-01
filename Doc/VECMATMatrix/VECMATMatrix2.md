@@ -11,7 +11,7 @@ _____________
 ## **Creation**
 
 ```C
-void VECMATMatrixCreateMatrix(VECMATMatrix2, float, float, float , float, float, float, float, float, float, float, float, float, float, float, float, float)
+void VECMATMatrix2CreateMatrix(VECMATMatrix2, float, float, float , float)
 ```
 Set the matrix with the given values. [More here.](./functions/VECMATMatrix2/VECMATMatrix2CreateMatrix.md)
 
