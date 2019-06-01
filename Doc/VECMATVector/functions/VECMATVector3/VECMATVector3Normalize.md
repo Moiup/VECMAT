@@ -10,7 +10,7 @@ void VECMATVector3Normalize(VECMATVector3 v)
 
 
 ## **Parameter**
-**v**\
+**v**  
 The vector of size 3 to normalize.
 
 ## **Result**

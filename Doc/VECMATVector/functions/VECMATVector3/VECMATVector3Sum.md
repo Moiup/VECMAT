@@ -14,13 +14,13 @@ void VECMATVector3Sum(
 
 
 ## **Parameters**
-**v1**\
+**v1**  
 A vector of size 3.
 
-**v2**\
+**v2**  
 A vector of size 3.
 
-**res**\
+**res**  
 The vector of size 3 where the result will be stored.
 
 ## **Result**

@@ -14,16 +14,16 @@ void VECMATVector3Define(
 ```
 
 ## **Parameters**
-**v**\
+**v**  
 The vector of size 3 to work with.
 
-**x**\
+**x**  
 The new `x` value.
 
-**y**\
+**y**  
 Tne new `y` value.
 
-**z**\
+**z**  
 The new `z` value.
 
 ## **Result**

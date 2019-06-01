@@ -14,13 +14,13 @@ VECMATVector3ScalarSub(
 
 
 ## **Parameters**
-**v**\
+**v**  
 A vector of size 3.
 
-**res**\
+**res**  
 The vector of size 3 where the result will be stored.
 
-**r**\
+**r**  
 The real value to substract to the vector `v`.
 
 ## **Result**
