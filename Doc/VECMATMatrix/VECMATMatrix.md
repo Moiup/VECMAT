@@ -1,6 +1,6 @@
 [Main menu](../../Readme.md)->[Doc](../VECMATKit.md)
 
-# [Matrix](./VECMATMatrix/VECMATMatrix.md)
+# Matrix
 
 An array of arrays, of a given size.
 
