@@ -10,13 +10,13 @@ void VECMATVector2Define(VECMATVector2 v, float x, float y)
 
 
 ## **Parameters**
-**v**\
+**v**  
 The vector of size 2 to work with.
 
-**x**\
+**x**  
 The new `x` value.
 
-**y**\
+**y**  
 Tne new `y` value.
 
 ## **Result**

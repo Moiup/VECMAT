@@ -14,13 +14,13 @@ VECMATVector2ScalarMult(
 
 
 ## **Parameters**
-**v**\
+**v**  
 A vector of size 2.
 
-**res**\
+**res**  
 The vector of size 2 where the result will be stored.
 
-**r**\
+**r**  
 The real value which will multiply the vector `v`.
 
 ## **Result**

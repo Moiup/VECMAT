@@ -10,7 +10,7 @@ void VECMATVector2Zero(VECMATVector2 v)
 
 
 ## **Parameter**
-**v**\
+**v**  
 The vector of size 2 to work with.
 
 ## **Result**

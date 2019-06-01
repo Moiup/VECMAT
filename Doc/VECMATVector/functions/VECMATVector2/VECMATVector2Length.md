@@ -10,7 +10,7 @@ void VECMATVector2Length(VECMATVector2 v)
 
 
 ## **Parameter**
-**v**\
+**v**  
 The vector of size 2 to calulate its length.
 
 ## **Return**

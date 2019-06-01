@@ -16,19 +16,19 @@ void VECMATVector2Create(
 
 
 ## **Parameters**
-**v**\
+**v**  
 The vector of size 2 to work with.
 
-**p1X**\
+**p1X**  
 The _x_ coordinate of the first point.
 
-**p1Y**\
+**p1Y**  
 The _y_ coordinate of the first point.
 
-**p2X**\
+**p2X**  
 The _x_ coordinate of the second point.
 
-**p2Y**\
+**p2Y**  
 The _y_ coordinate of the second point.
 
 ## **Result**

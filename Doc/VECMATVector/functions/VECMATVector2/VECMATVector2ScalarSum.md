@@ -14,13 +14,13 @@ VECMATVector2ScalarSum(
 
 
 ## **Parameters**
-**v**\
+**v**  
 A vector of size 2.
 
-**res**\
+**res**  
 The vector of size 2 where the result will be stored.
 
-**r**\
+**r**  
 The real value to add to the vector `v`.
 
 ## **Result**
