@@ -1,43 +1,84 @@
 [Main menu](../../../../Readme.md)->[Doc](../../../VECMATKit.md)->[VECMATVector](../../VECMATVector.md)->[VECMATVector4](../../VECMATVector4.md)
 
-# VECMATVector4Create(\_,\_,\_,\_,\_)
-Create a vector with the coordinates of the two given points.
+# VECMATMatrix4CreateMatrix
+Set the matrix with the given values.
 
 ## **Declaration**
 ```C
-void VECMATVector4Create(
-        float p1X,
-        float p1Y,
-        float p1Z,
-        float p2X,
-        float p2Y,
-        float p2Z,
-        VECMATVector2 v
-    )
+void VECMATMatrix4CreateMatrix(
+		VECMATMatrix4 m,
+		float m00,
+		float m01,
+		float m02,
+		float m03,
+		float m10,
+		float m11,
+		float m12,
+		float m13,
+		float m20,
+		float m21,
+		float m22,
+		float m23,
+		float m30,
+		float m31,
+		float m32,
+		float m33
+	)
 ```
 
 
 ## **Parameters**
-**v**  
-The vector of size 4 to work with.
+**m**  
+The 4x4 matrix to set its values.
 
-**p1X**  
-The _x_ coordinate of the first point.
+**m00**  
+The value found at the first line first column.
 
-**p1Y**  
-The _y_ coordinate of the first point.
+**m01**  
+The value found at the first line second column.
 
-**p1Z**  
-The _y_ coordinate of the first point.
+**m02**  
+The value found at the first line third column.
 
-**p2X**  
-The _x_ coordinate of the second point.
+**m03**  
+The value found at the first line fourth column.
 
-**p2Y**  
-The _y_ coordinate of the second point.
+**m10**  
+The value found at the second line first column.
 
-**p2Z**. 
-The _z_ coordinate of the second point.
+**m11**  
+The value found at the second line second column.
+
+**m12**  
+The value found at the second line third column.
+
+**m13**  
+The value found at the second line fourth column.
+
+**m20**  
+The value found at the third line first column.
+
+**m21**  
+The value found at the third line second column.
+
+**m22**  
+The value found at the third line third column.
+
+**m23**  
+The value found at the third line fourth column.
+
+**m30**  
+The value found at the fourth line first column.
+
+**m31**  
+The value found at the fourth line second column.
+
+**m32**  
+The value found at the fourth line third column.
+
+**m33**  
+The value found at the fourth line fourth column.
+
 
 ## **Result**
-The vector `v` with coodinates calculated with _p1_ and _p2_. The _w_ coordinate is set to 1.
+The 4x4 matrix `m` set with the given parameters.
