@@ -26,6 +26,7 @@ void VECMATMatrix2Identity(VECMATMatrix2)
 ```
 Set the matrix as an identity matrix. [More here.](./functions/VECMATMatrix2/VECMATMatrix2Identity.md)
 
+## **Calculus**
 ```C
 void VECMATMatrix2Sum(VECMATMatrix2, VECMATMatrix2, VECMATMatrix2)
 ```
