@@ -34,4 +34,4 @@ Specifies the distance from the viewer to the far clipping plane (always positiv
 A 4x4 matrix.
 
 ## **Result**
-The 4x4 orhtographic projection matrix in `projection`
+The 4x4 perspective projection matrix in `projection`
