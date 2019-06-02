@@ -45,4 +45,4 @@ Each matrix type contains the same functions (adapted for each size). There are 
 
 Contains a set of functions for creating the matrixes used by OpenGL.
 		
-* [VECMATGlkit](./Doc/VECMATGlkit/ECMATGlkit.md)
+* [VECMATGlkit](./Doc/VECMATGlkit/VECMATGlkit.md)
