@@ -33,10 +33,10 @@ Coordinate of the bottom horizontal clipping plane.
 Coordinate of the top horizontal clipping plane.
 
 **nearZ**  
-Distance of the nearer depth clipping plane.
+Distance of the nearer depth clipping plane. (positive value)
 
 **farZ**  
-Distance of the farther depth clipping plane.
+Distance of the farther depth clipping plane. (positive value)
 
 **projection**  
 A 4x4 matrix.
