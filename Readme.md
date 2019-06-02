@@ -10,6 +10,11 @@ VECMATKit provides tools for developping OpenGL programmes with C language. The 
     * New features : funcitons, types, structures
     * Anything that comes to your mind that can improve this kit
 
+# How to
+If you want to use this library in your project, you just need to include the file VECMATGlkit.h (found in VECMATKit folder), and generate the .o file.
+
+You can, instead of including VECMATGlkit.h file, include VECMATGlkit.c, then you won't need to generate the .o file corresponding.
+
 _____________
 # [Doc](./Doc/VECMATKit.md)
 
