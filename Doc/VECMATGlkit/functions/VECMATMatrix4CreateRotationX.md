@@ -1,6 +1,6 @@
 [Main menu](../../../Readme.md)->[Doc](../../VECMATKit.md)->[VECMATGlkit](../VECMATGlkit.md)
 
-# VECMATMatrix4CreateTranslation(\_,\_)
+# VECMATMatrix4CreateRotationX(\_,\_)
 Create the 4x4 rotation matrix around the X axis.
 
 ## **Declaration**
