@@ -33,7 +33,7 @@ Coordinate of the top horizontal clipping plane.
 **nearZ**  
 Distance of the nearer depth clipping plane.
 
-**farZ**
+**farZ**  
 Distance of the farther depth clipping plane.
 
 **projection**  
