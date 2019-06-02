@@ -46,7 +46,7 @@ Scale an existing 4x4 matrix. [More here.](./functions/VECMATMatrix4MakeScale.md
 ## Projection
 ### **Orhtographic**
 ```C
-void VECMATMatrix4ProjectionOrtho(float, flaot, float, float, float, float, VECMATMatrix4)
+void VECMATMatrix4ProjectionOrtho(float, float, float, float, float, float, VECMATMatrix4)
 ```
 Create the 4x4 orthographic projection matrix. [More here.](./functions/VECMATMatrix4ProjectionOrtho.md)
 
