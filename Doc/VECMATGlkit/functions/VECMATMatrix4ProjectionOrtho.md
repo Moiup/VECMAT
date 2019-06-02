@@ -30,6 +30,12 @@ Coordinate of the bottom horizontal clipping plane.
 **top**  
 Coordinate of the top horizontal clipping plane.
 
+**nearZ**  
+Distance of the nearer depth clipping plane.
+
+**farZ**
+Distance of the farther depth clipping plane.
+
 **projection**  
 A 4x4 matrix.
 
