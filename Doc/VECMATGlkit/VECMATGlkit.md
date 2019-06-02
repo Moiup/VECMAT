@@ -58,7 +58,7 @@ Create the 4x4 perspective projection matrix. [More here.](./functions/VECMATMat
 
 ### **Frustum**
 ```C
-void VECMATMatrix4ProjectionFrustum(float, flaot, float, float, float, float, VECMATMatrix4)
+void VECMATMatrix4ProjectionFrustum(float, float, float, float, float, float, VECMATMatrix4)
 ```
 Create the 4x4 frustum projection matrix. [More here.](./functions/VECMATMatrix4ProjectionFrustum.md)
 
