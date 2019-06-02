@@ -1,6 +1,6 @@
 # VECMATKit
 ## Description
-VECMATKit provides tools for developping OpenGL programmes with C language. The goal here is to fill the lack of library of vectors and matrixes in C. Even if the GLKit exits, it is Apple only. Other languages (C++, JavaScript) have GLM which gives the tools necessary for manipulating matrixes with OpenGL.
+VECMATKit provides tools for developping OpenGL programmes with C language. The goal here is to fill the lack of library of vectors and matrixes in C. Even if the GLKit exits, it is Apple only. Other languages (C++, JavaScript) have GLM which gives the necessary tools for manipulating matrixes with OpenGL.
 
 ## Notes
 1. This library is developped for OpenGL purpose, it does not have the ambition to be a complete matrix/vector library for complex maths and physics programmes.
