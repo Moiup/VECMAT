@@ -7,7 +7,7 @@ VECMATKit provides tools for developping OpenGL programmes with C language. The 
 2. Work is in progress, lot of things may change in a near future.
 3. Do not hesitate for any suggestion :
     * Code improvement (the goal is not to have a clean code, but a fast execution time)
-    * New features : funcitons, types, structures
+    * New features : functions, types, structures
     * Anything that comes to your mind that can improve this kit
 
 # How to
