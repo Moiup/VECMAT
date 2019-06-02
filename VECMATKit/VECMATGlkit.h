@@ -94,4 +94,5 @@ void VECMATMatrix4ProjectionFrustum(float left, float right, float bottom, float
  * http://ogldev.atspace.co.uk/www/tutorial13/tutorial13.html
 */
 void VECMATMatrix4LookAt(float Cx, float Cy, float Cz, float Tx, float Ty, float Tz, float Ux, float Uy, float Uz, VECMATMatrix4 look);
+
 #endif
