@@ -7,6 +7,8 @@
  * Author : Mohammed-Bahsir Mahdi
  * 
 */
+#ifndef VECMAT_MATRIX2_C
+#define VECMAT_MATRIX2_C
 #include "VECMATMatrix2.h"
 
 /**
@@ -164,3 +166,5 @@ void VECMATMatrix2ScalarDivide(VECMATMatrix2 m, VECMATMatrix2 res, float r)
     res[1][0] = m[1][0] / r;
     res[1][1] = m[1][1] / r;
 }
+
+#endif

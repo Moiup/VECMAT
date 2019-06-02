@@ -1,3 +1,27 @@
+/**
+ * Name : VECMATMatrix4.h
+ * 
+ * 
+ * Module of Matrix of size 4
+ * 
+ * Author : Mohammed-Bahsir Mahdi
+ * 
+*/
+#ifndef VECMAT_MATRIX4_H
+#define VECMAT_MATRIX4_H
+#include "VECMATTools.h"
+
+#define MAT4_DIM 4  // The number of values
+
+/***********************************************/
+/* Type definitions                            */
+/***********************************************/
+
+typedef float VECMATMatrix4[MAT4_DIM][MAT4_DIM];
+
+/**************************************************/
+/* Functions                                      */
+/**************************************************/
 
 /**
  * Create a matrix with the value given

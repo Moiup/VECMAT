@@ -7,7 +7,10 @@
  * Author : Mohammed-Bahsir Mahdi
  * 
 */
+#ifndef VECMAT_GLKIT_C
+#define VECMAT_GLKIT_C
 #include "VECMATGlkit.h"
+
 
 /**
  * Create the translation matrix (result in m)
@@ -358,3 +361,5 @@ void VECMATMatrix4LookAt(float Cx, float Cy, float Cz, float Tx, float Ty, float
     look[2][3] = 0;
     look[3][3] = 1;
 }
+
+#endif
