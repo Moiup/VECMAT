@@ -53,8 +53,5 @@ The Z coordinate of the up vector.
 **look**  
 A 4x4 matrix.
 
-**projection**  
-A 4x4 matrix.
-
 ## **Result**
 The 4x4 look at matrix in `look`
