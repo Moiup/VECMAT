@@ -39,5 +39,8 @@ The _y_ coordinate of the second point.
 **p2Z**  
 The _z_ coordinate of the second point.
 
+**w**
+The _w_ homogeneous value.
+
 ## **Result**
 The vector `v` with coodinates calculated with _p1_ and _p2_. The _w_ coordinate is set to 1.

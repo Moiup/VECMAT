@@ -21,7 +21,7 @@ void VECMATMatrix4Zero(VECMATMatrix4)
 Set all values of the matrix to 0. [More here.](./functions/VECMATMatrix4/VECMATMatrix4Zero.md)
 
 ```C
-void VECMATMatrix4Identity(VECMATMatrix4)
+void VECMATMatrix4Identity(VECMATMatrix4, float)
 ```
 Set the matrix as an identity matrix. [More here.](./functions/VECMATMatrix4/VECMATMatrix4Identity.md)
 
