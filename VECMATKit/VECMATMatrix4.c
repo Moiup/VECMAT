@@ -67,29 +67,30 @@ void VECMATMatrix4Zero(VECMATMatrix4 m)
 
 /**
  * Set the matrix `m`as an identity matrix
+ * w is the homogeneous value
 */
-void VECMATMatrix4Identity(VECMATMatrix4 m)
+void VECMATMatrix4Identity(VECMATMatrix4 m, float w)
 {
     // First line
-    m[0][0] = 1;
+    m[0][0] = w;
     m[0][1] = 0;
     m[0][2] = 0;
     m[0][3] = 0;
     // Second line
     m[1][0] = 0;
-    m[1][1] = 1;
+    m[1][1] = w;
     m[1][2] = 0;
     m[1][3] = 0;
     // Thirld line
     m[2][0] = 0;
     m[2][1] = 0;
-    m[2][2] = 1;
+    m[2][2] = w;
     m[2][3] = 0;
     // Fourth line
     m[3][0] = 0;
     m[3][1] = 0;
     m[3][2] = 0;
-    m[3][3] = 1;
+    m[3][3] = w;
 }
 
 /**

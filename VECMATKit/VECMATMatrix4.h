@@ -34,9 +34,10 @@ void VECMATMatrix4CreateMatrix(VECMATMatrix4 m, float m00, float m01, float m02,
 void VECMATMatrix4Zero(VECMATMatrix4 m);
 
 /**
- * Set the matrix `m` as an identity matrix
+ * Set the matrix `m`as an identity matrix
+ * w is the homogeneous value
 */
-void VECMATMatrix4Identity(VECMATMatrix4 m);
+void VECMATMatrix4Identity(VECMATMatrix4 m, float w);
 
 /**
  * Add two matrix, the result is in `res`
