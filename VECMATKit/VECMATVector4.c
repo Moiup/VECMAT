@@ -41,18 +41,18 @@ void VECMATVector4Define(VECMATVector4 v, float x, float y, float z, float w)
 /**
  * Create a homogeneous vec4 (result is in `v`)
 */
-void VECMATVector4Create(float p1X, float p1Y, float p1Z, float p2X, float p2Y, float p2Z, VECMATVector4 v)
+void VECMATVector4Create(float p1X, float p1Y, float p1Z, float p2X, float p2Y, float p2Z, float w, VECMATVector4 v)
 {
     v[VEC4_X] = p2X - p1X;
     v[VEC4_Y] = p2Y - p1Y;
     v[VEC4_Z] = p2Z - p1Z;
-    v[VEC4_W] = HOMOGENEOUS_VAL;
+    v[VEC4_W] = w;
 }
 
 /**
  * Create a homogeneous vec4 already normalized (result in `v`)
 */
-void VECMATVector4CreateNormalized(float p1X, float p1Y, float p1Z, float p2X, float p2Y, float p2Z, VECMATVector4 v)
+void VECMATVector4CreateNormalized(float p1X, float p1Y, float p1Z, float p2X, float p2Y, float p2Z, float w, VECMATVector4 v)
 {
     float length;
 
@@ -60,16 +60,15 @@ void VECMATVector4CreateNormalized(float p1X, float p1Y, float p1Z, float p2X, f
     v[VEC4_X] = (p2X) - (p1X);
     v[VEC4_Y] = (p2Y) - (p1Y);
     v[VEC4_Z] = (p2Z) - (p1Z);
-    v[VEC4_W] = HOMOGENEOUS_VAL;
+    v[VEC4_W] = w;
 
     // Getting the vector length
     length = VEC4_LENGTH(v);
 
     // Normalizing the vector
-    v[VEC4_X] = v[VEC4_X] / length;
-    v[VEC4_Y] = v[VEC4_Y] / length;
-    v[VEC4_Z] = v[VEC4_Z] / length;
-    v[VEC4_W] = HOMOGENEOUS_VAL;
+    v[VEC4_X] = (v[VEC4_X] / length) * w;
+    v[VEC4_Y] = (v[VEC4_Y] / length) * w;
+    v[VEC4_Z] = (v[VEC4_Z] / length) * w;
 }
 
 /**
@@ -79,9 +78,9 @@ void VECMATVector4Normalize(VECMATVector4 v)
 {
     float length = VEC4_LENGTH(v);
 
-    v[VEC4_X] = v[VEC4_X] / length;
-    v[VEC4_Y] = v[VEC4_Y] / length;
-    v[VEC4_Z] = v[VEC4_Z] / length;
+    v[VEC4_X] = (v[VEC4_X] / length) * v[VEC4_W];
+    v[VEC4_Y] = (v[VEC4_Y] / length) * v[VEC4_W];
+    v[VEC4_Z] = (v[VEC4_Z] / length) * v[VEC4_W];
 }
 
 /**

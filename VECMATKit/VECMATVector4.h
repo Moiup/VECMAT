@@ -43,12 +43,12 @@ void VECMATVector4Define(VECMATVector4 v, float x, float y, float z, float w);
 /**
  * Create a homogeneous vec4 (result is in `v`)
 */
-void VECMATVector4Create(float p1X, float p1Y, float p1Z, float p2X, float p2Y, float p2Z, VECMATVector4 v);
+void VECMATVector4Create(float p1X, float p1Y, float p1Z, float p2X, float p2Y, float p2Z, float w, VECMATVector4 v);
 
 /**
  * Create a homogeneous vec4 already normalized (result in `v`)
 */
-void VECMATVector4CreateNormalized(float p1X, float p1Y, float p1Z, float p2X, float p2Y, float p2Z, VECMATVector4 v);
+void VECMATVector4CreateNormalized(float p1X, float p1Y, float p1Z, float p2X, float p2Y, float p2Z, float w, VECMATVector4 v);
 
 /**
  * Normalize the vector `v`
