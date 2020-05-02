@@ -12,13 +12,13 @@
 // Tools' include
 #include "VECMATTools.h"
 // Vectors'includes
-#include "VECMATVector2.c"
-#include "VECMATVector3.c"
-#include "VECMATVector4.c"
+#include "VECMATVector2.h"
+#include "VECMATVector3.h"
+#include "VECMATVector4.h"
 // Matrixes' includes
-#include "VECMATMatrix2.c"
-#include "VECMATMatrix3.c"
-#include "VECMATMatrix4.c"
+#include "VECMATMatrix2.h"
+#include "VECMATMatrix3.h"
+#include "VECMATMatrix4.h"
 
 /**
  * Create the translation matrix (result in m)
