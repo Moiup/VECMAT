@@ -107,6 +107,6 @@ void VECMATMatrix2ScalarDivide(VECMATMatrix2 m, VECMATMatrix2 res, float r);
  * If you don't want to store the result in a new vector, call the function like this :
  *      VECMATMatrix2VecMult(m, vec2, vec2);
 */
-void VECMATMatrix3VecMult(VECMATMatrix2 m, VECMATVector2 vec2, VECMATVector2 res);
+void VECMATMatrix2VecMult(VECMATMatrix2 m, VECMATVector2 vec2, VECMATVector2 res);
 
 #endif
