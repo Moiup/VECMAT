@@ -15,6 +15,7 @@
 #define VEC3_X 0   // Access the X value
 #define VEC3_Y 1   // Access the Y value
 #define VEC3_Z 2   // Access the Z value
+#define VEC3_W 2   // When using homogeneous vector
 
 /***********************************************/
 /* Type definitions                            */

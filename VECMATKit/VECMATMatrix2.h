@@ -10,6 +10,7 @@
 #ifndef VECMAT_MATRIX2_H
 #define VECMAT_MATRIX2_H
 #include "VECMATTools.h"
+#include "VECMATVector2.h"
 
 #define MAT2_DIM 2  // The number of values
 
@@ -99,5 +100,13 @@ void VECMATMatrix2ScalarMult(VECMATMatrix2 m, VECMATMatrix2 res, float r);
  *      VECMATMatrix2ScalarDivide(m, m, r);
 */
 void VECMATMatrix2ScalarDivide(VECMATMatrix2 m, VECMATMatrix2 res, float r);
+
+/**
+ * Multplie the matrix with a vector (result is in res)
+ * 
+ * If you don't want to store the result in a new vector, call the function like this :
+ *      VECMATMatrix2VecMult(m, vec2, vec2);
+*/
+void VECMATMatrix3VecMult(VECMATMatrix2 m, VECMATVector2 vec2, VECMATVector2 res);
 
 #endif

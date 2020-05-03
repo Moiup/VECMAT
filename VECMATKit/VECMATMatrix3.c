@@ -227,4 +227,20 @@ void VECMATMatrix3ScalarDivide(VECMATMatrix3 m, VECMATMatrix3 res, float r)
     res[2][2] = m[2][2] / r;
 }
 
+/**
+ * Multplie the matrix with a vector (result is in res)
+ * 
+ * If you don't want to store the result in a new vector, call the function like this :
+ *      VECMATMatrix3VecMult(m, vec3, vec3);
+*/
+void VECMATMatrix3VecMult(VECMATMatrix3 m, VECMATVector3 vec3, VECMATVector3 res)
+{
+    // First line
+    res[VEC3_X] = m[0][0] * vec3[VEC3_X] + m[0][1] * vec3[VEC3_Y] + m[0][2] * vec3[VEC3_Z];
+    // Second line
+    res[VEC3_Y] = m[1][0] * vec3[VEC3_X] + m[1][1] * vec3[VEC3_Y] + m[1][2] * vec3[VEC3_Z];
+    // Third line
+    res[VEC3_Z] = m[2][0] * vec3[VEC3_X] + m[2][1] * vec3[VEC3_Y] + m[2][2] * vec3[VEC3_Z];
+}
+
 #endif

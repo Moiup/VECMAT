@@ -10,6 +10,7 @@
 #ifndef VECMAT_MATRIX4_H
 #define VECMAT_MATRIX4_H
 #include "VECMATTools.h"
+#include "VECMATVector4.h"
 
 #define MAT4_DIM 4  // The number of values
 
@@ -99,5 +100,13 @@ void VECMATMatrix4ScalarMult(VECMATMatrix4 m, VECMATMatrix4 res, float r);
  *      VECMATMatrix4ScalarDivide(m, m, r);
 */
 void VECMATMatrix4ScalarDivide(VECMATMatrix4 m, VECMATMatrix4 res, float r);
+
+/**
+ * Multplie the matrix with a vector (result is in res)
+ * 
+ * If you don't want to store the result in a new vector, call the function like this :
+ *      VECMATMatrix4VecMult(m, vec4, vec4);
+*/
+void VECMATMatrix4VecMult(VECMATMatrix4 m, VECMATVector4 vec4, VECMATVector4 res);
 
 #endif

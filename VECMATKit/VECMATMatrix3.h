@@ -10,6 +10,7 @@
 #ifndef VECMAT_MATRIX3_H
 #define VECMAT_MATRIX3_H
 #include "VECMATTools.h"
+#include "VECMATVector3.h"
 
 #define MAT3_DIM 3  // The number of values
 
@@ -98,5 +99,13 @@ void VECMATMatrix3ScalarMult(VECMATMatrix3 m, VECMATMatrix3 res, float r);
  *      VECMATMatrix3ScalarDivide(m, m, r);
 */
 void VECMATMatrix3ScalarDivide(VECMATMatrix3 m, VECMATMatrix3 res, float r);
+
+/**
+ * Multplie the matrix with a vector (result is in res)
+ * 
+ * If you don't want to store the result in a new vector, call the function like this :
+ *      VECMATMatrix3VecMult(m, vec3, vec3);
+*/
+void VECMATMatrix3VecMult(VECMATMatrix3 m, VECMATVector3 vec3, VECMATVector3 res);
 
 #endif
