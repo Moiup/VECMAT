@@ -11,13 +11,10 @@
 #define VECMAT_VECTOR3_H
 #include "VECMATTools.h"
 
-#define VEC3_DIM 3  // The number of values
-#define VEC3_X 0    // Access the X value
-#define VEC3_Y 1    // Access the Y value
-#define VEC3_Z 2    // Access the Z value
-
-#define VEC3_LENGTH(v) (sqrt((v[VEC3_X]) * (v[VEC3_X])) + ((v[VEC3_Y]) * (v[VEC3_Y])) + ((v[VEC3_Z]) * (v[VEC3_Z])))
-
+#define VEC3_DIM 3 // The number of values
+#define VEC3_X 0   // Access the X value
+#define VEC3_Y 1   // Access the Y value
+#define VEC3_Z 2   // Access the Z value
 
 /***********************************************/
 /* Type definitions                            */
@@ -103,7 +100,6 @@ void VECMATVector3ScalarSum(VECMATVector3 v, VECMATVector3 res, float r);
  *      VECMATVector3ScalarSub(v, v, r);
 */
 void VECMATVector3ScalarSub(VECMATVector3 v, VECMATVector3 res, float r);
-
 
 /**
  * Multpiply a vector by a scalar (be careful, you will loose the value of your initial vector)

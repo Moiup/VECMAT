@@ -11,14 +11,11 @@
 #define VECMAT_VECTOR4_H
 #include "VECMATTools.h"
 
-#define VEC4_DIM 4  // The number of values
-#define VEC4_X 0    // Access the X value
-#define VEC4_Y 1    // Access the Y value
-#define VEC4_Z 2    // Access the Z value
-#define VEC4_W 3    // Access the W value, it is the homogeneous value
-
-#define VEC4_LENGTH(v) (sqrt((v[VEC4_X]) * (v[VEC4_X])) + ((v[VEC4_Y]) * (v[VEC4_Y])) + ((v[VEC4_Z]) * (v[VEC4_Z])))
-
+#define VEC4_DIM 4 // The number of values
+#define VEC4_X 0   // Access the X value
+#define VEC4_Y 1   // Access the Y value
+#define VEC4_Z 2   // Access the Z value
+#define VEC4_W 3   // Access the W value, it is the homogeneous value
 
 /***********************************************/
 /* Type definitions                            */

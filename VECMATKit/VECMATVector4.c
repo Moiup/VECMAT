@@ -63,12 +63,15 @@ void VECMATVector4CreateNormalized(float p1X, float p1Y, float p1Z, float p2X, f
     v[VEC4_W] = w;
 
     // Getting the vector length
-    length = VEC4_LENGTH(v);
+    length = VECMATVector4Length(v);
 
-    // Normalizing the vector
-    v[VEC4_X] = (v[VEC4_X] / length) * w;
-    v[VEC4_Y] = (v[VEC4_Y] / length) * w;
-    v[VEC4_Z] = (v[VEC4_Z] / length) * w;
+    if (length != 0)
+    {
+        // Normalizing the vector
+        v[VEC4_X] = (v[VEC4_X] / length) * w;
+        v[VEC4_Y] = (v[VEC4_Y] / length) * w;
+        v[VEC4_Z] = (v[VEC4_Z] / length) * w;
+    }
 }
 
 /**
@@ -76,11 +79,14 @@ void VECMATVector4CreateNormalized(float p1X, float p1Y, float p1Z, float p2X, f
 */
 void VECMATVector4Normalize(VECMATVector4 v)
 {
-    float length = VEC4_LENGTH(v);
+    float length = VECMATVector4Length(v);
 
-    v[VEC4_X] = (v[VEC4_X] / length) * v[VEC4_W];
-    v[VEC4_Y] = (v[VEC4_Y] / length) * v[VEC4_W];
-    v[VEC4_Z] = (v[VEC4_Z] / length) * v[VEC4_W];
+    if (length != 0)
+    {
+        v[VEC4_X] = (v[VEC4_X] / length) * v[VEC4_W];
+        v[VEC4_Y] = (v[VEC4_Y] / length) * v[VEC4_W];
+        v[VEC4_Z] = (v[VEC4_Z] / length) * v[VEC4_W];
+    }
 }
 
 /**
@@ -88,7 +94,7 @@ void VECMATVector4Normalize(VECMATVector4 v)
 */
 float VECMATVector4Length(VECMATVector4 v)
 {
-    return VEC4_LENGTH(v);
+    return sqrt((v[VEC4_X] * v[VEC4_X]) + (v[VEC4_Y] * v[VEC4_Y]) + (v[VEC4_Z] * v[VEC4_Z]));
 }
 
 /**

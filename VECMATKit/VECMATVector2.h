@@ -15,8 +15,6 @@
 #define VEC2_X 0   // Access the X value
 #define VEC2_Y 1   // Access the Y value
 
-#define VEC2_LENGTH(v) (sqrt((v[VEC2_X]) * (v[VEC2_X])) + ((v[VEC2_Y]) * (v[VEC2_Y])))
-
 /***********************************************/
 /* Type definitions                            */
 /***********************************************/
