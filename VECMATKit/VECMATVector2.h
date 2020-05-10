@@ -59,7 +59,7 @@ float VECMATVector2Length(VECMATVector2 v);
 /**
  * Return the dot product between two vectors
 */
-int VECMATVector2DotProduct(VECMATVector2 v1, VECMATVector2 v2)
+int VECMATVector2DotProduct(VECMATVector2 v1, VECMATVector2 v2);
 
 /**
  * Sum of two vectors (result in res)
