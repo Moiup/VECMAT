@@ -26,6 +26,11 @@ void VECMATVector2Create(float, float, float, float, VECMATVector2)
 Create a vector with the coordinates of the two given points. [More here.](./functions/VECMATVector2/VECMATVector2Create.md)
 
 ```C
+void VECMATVector3Copy(VECMATVector2, VECMATVector2)
+```
+Copy a vector into an other vector. [More here.](./functions/VECMATVector2/VECMATVector2Copy.md)
+
+```C
 void VECMATVector2CreateNormalized(float, float, float, float, VECMATVector2)
 ```
 Create a normalized vector with the coordinates of the two given points. [More here.](./functions/VECMATVector2/VECMATVector2CreateNormalized.md)
