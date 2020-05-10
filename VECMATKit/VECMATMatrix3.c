@@ -235,6 +235,12 @@ void VECMATMatrix3ScalarDivide(VECMATMatrix3 m, VECMATMatrix3 res, float r)
 */
 void VECMATMatrix3VecMult(VECMATMatrix3 m, VECMATVector3 vec3, VECMATVector3 res)
 {
+    VECMATVector3 vec3_tmp;
+
+    vec3_tmp[VEC3_X] = vec3[VEC3_X];
+    vec3_tmp[VEC3_Y] = vec3[VEC3_Y];
+    vec3_tmp[VEC3_Z] = vec3[VEC3_Z];
+
     // First line
     res[VEC3_X] = m[0][0] * vec3[VEC3_X] + m[0][1] * vec3[VEC3_Y] + m[0][2] * vec3[VEC3_Z];
     // Second line

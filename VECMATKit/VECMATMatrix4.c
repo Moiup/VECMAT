@@ -317,6 +317,13 @@ void VECMATMatrix4ScalarDivide(VECMATMatrix4 m, VECMATMatrix4 res, float r)
 */
 void VECMATMatrix4VecMult(VECMATMatrix4 m, VECMATVector4 vec4, VECMATVector4 res)
 {
+    VECMATVector4 vec4_tmp;
+
+    vec4_tmp[VEC4_X] = vec4[VEC4_X];
+    vec4_tmp[VEC4_Y] = vec4[VEC4_Y];
+    vec4_tmp[VEC4_Z] = vec4[VEC4_Z];
+    vec4_tmp[VEC4_W] = vec4[VEC4_W];
+    
     // First line
     res[VEC4_X] = m[0][0] * vec4[VEC4_X] + m[0][1] * vec4[VEC4_Y] + m[0][2] * vec4[VEC4_Z] + m[0][3] * vec4[VEC4_W];
     // Second line
