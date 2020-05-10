@@ -49,12 +49,15 @@ float VECMATVector3Length(VECMATVector3)
 ```
 Return the length of the vector. [More here.](./functions/VECMATVector3/VECMATVector3Length.md)
 
-
 ```C
 void VECMATVector3CrossProduct(VECMATVector3, VECMATVector3, VECMATVector3)
 ```
 Do the cross product of two vectors. [More here.](./functions/VECMATVector3/VECMATVector3CrossProduct.md)
 
+```C
+int VECMATVector3DotProduct(VECMATVector3, VECMATVector3)
+```
+Do the dot product between two vectors. [More here.](./functions/VECMATVector3/VECMATVector3DotProduct.md)
 
 ```C
 void VECMATVector3Sum(VECMATVector3, VECMATVector3, VECMATVector3)

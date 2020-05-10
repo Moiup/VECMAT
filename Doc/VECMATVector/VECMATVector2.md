@@ -60,6 +60,11 @@ void VECMATVector2Sub(VECMATVector2, VECMATVector2, VECMATVector2)
 Do the substraction of two vectors. [More here.](./functions/VECMATVector2/VECMATVector2Sub.md)
 
 ```C
+int VECMATVector2DotProduct(VECMATVector3, VECMATVector3)
+```
+Do the dot product between two vectors. [More here.](./functions/VECMATVector2/VECMATVector2DotProduct.md)
+
+```C
 void VECMATVector2ScalarSum(VECMATVector2, VECMATVector2, float)
 ```
 Add a scalar to a vector. [More here.](./functions/VECMATVector2/VECMATVector2ScalarSum.md)
