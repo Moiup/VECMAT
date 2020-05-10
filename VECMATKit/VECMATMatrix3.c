@@ -242,11 +242,11 @@ void VECMATMatrix3VecMult(VECMATMatrix3 m, VECMATVector3 vec3, VECMATVector3 res
     vec3_tmp[VEC3_Z] = vec3[VEC3_Z];
 
     // First line
-    res[VEC3_X] = m[0][0] * vec3[VEC3_X] + m[0][1] * vec3[VEC3_Y] + m[0][2] * vec3[VEC3_Z];
+    res[VEC3_X] = m[0][0] * vec3_tmp[VEC3_X] + m[0][1] * vec3_tmp[VEC3_Y] + m[0][2] * vec3_tmp[VEC3_Z];
     // Second line
-    res[VEC3_Y] = m[1][0] * vec3[VEC3_X] + m[1][1] * vec3[VEC3_Y] + m[1][2] * vec3[VEC3_Z];
+    res[VEC3_Y] = m[1][0] * vec3_tmp[VEC3_X] + m[1][1] * vec3_tmp[VEC3_Y] + m[1][2] * vec3_tmp[VEC3_Z];
     // Third line
-    res[VEC3_Z] = m[2][0] * vec3[VEC3_X] + m[2][1] * vec3[VEC3_Y] + m[2][2] * vec3[VEC3_Z];
+    res[VEC3_Z] = m[2][0] * vec3_tmp[VEC3_X] + m[2][1] * vec3_tmp[VEC3_Y] + m[2][2] * vec3_tmp[VEC3_Z];
 }
 
 #endif

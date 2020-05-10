@@ -323,15 +323,15 @@ void VECMATMatrix4VecMult(VECMATMatrix4 m, VECMATVector4 vec4, VECMATVector4 res
     vec4_tmp[VEC4_Y] = vec4[VEC4_Y];
     vec4_tmp[VEC4_Z] = vec4[VEC4_Z];
     vec4_tmp[VEC4_W] = vec4[VEC4_W];
-    
+
     // First line
-    res[VEC4_X] = m[0][0] * vec4[VEC4_X] + m[0][1] * vec4[VEC4_Y] + m[0][2] * vec4[VEC4_Z] + m[0][3] * vec4[VEC4_W];
+    res[VEC4_X] = m[0][0] * vec4_tmp[VEC4_X] + m[0][1] * vec4_tmp[VEC4_Y] + m[0][2] * vec4_tmp[VEC4_Z] + m[0][3] * vec4_tmp[VEC4_W];
     // Second line
-    res[VEC4_Y] = m[1][0] * vec4[VEC4_X] + m[1][1] * vec4[VEC4_Y] + m[1][2] * vec4[VEC4_Z] + m[1][3] * vec4[VEC4_W];
+    res[VEC4_Y] = m[1][0] * vec4_tmp[VEC4_X] + m[1][1] * vec4_tmp[VEC4_Y] + m[1][2] * vec4_tmp[VEC4_Z] + m[1][3] * vec4_tmp[VEC4_W];
     // Third line
-    res[VEC4_Z] = m[2][0] * vec4[VEC4_X] + m[2][1] * vec4[VEC4_Y] + m[2][2] * vec4[VEC4_Z] + m[2][3] * vec4[VEC4_W];
+    res[VEC4_Z] = m[2][0] * vec4_tmp[VEC4_X] + m[2][1] * vec4_tmp[VEC4_Y] + m[2][2] * vec4_tmp[VEC4_Z] + m[2][3] * vec4_tmp[VEC4_W];
     // Fourth line
-    res[VEC4_W] = m[3][0] * vec4[VEC4_X] + m[3][1] * vec4[VEC4_Y] + m[3][2] * vec4[VEC4_Z] + m[3][3] * vec4[VEC4_W];
+    res[VEC4_W] = m[3][0] * vec4_tmp[VEC4_X] + m[3][1] * vec4_tmp[VEC4_Y] + m[3][2] * vec4_tmp[VEC4_Z] + m[3][3] * vec4_tmp[VEC4_W];
 }
 
 #endif

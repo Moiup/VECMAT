@@ -181,9 +181,9 @@ void VECMATMatrix2VecMult(VECMATMatrix2 m, VECMATVector2 vec2, VECMATVector2 res
     vec2_tmp[VEC2_Y] = vec2[VEC2_Y];
 
     // First line
-    res[VEC2_X] = m[0][0] * vec2[VEC2_X] + m[0][1] * vec2[VEC2_Y];
+    res[VEC2_X] = m[0][0] * vec2_tmp[VEC2_X] + m[0][1] * vec2_tmp[VEC2_Y];
     // Second line
-    res[VEC2_Y] = m[1][0] * vec2[VEC2_X] + m[1][1] * vec2[VEC2_Y];
+    res[VEC2_Y] = m[1][0] * vec2_tmp[VEC2_X] + m[1][1] * vec2_tmp[VEC2_Y];
 }
 
 #endif
