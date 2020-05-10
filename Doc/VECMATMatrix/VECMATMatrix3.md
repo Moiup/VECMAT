@@ -40,7 +40,7 @@ Do the substraction of two matrix. [More here.](./functions/VECMATMatrix3/VECMAT
 ```C
 void VECMATMatrix3Mult(VECMATMatrix3, VECMATMatrix3, VECMATMatrix3)
 ```
-Do the multiplication of two matrix. [More here.](./functions/VECMATMatrix3/VECMATMatrix3Sub.md)
+Do the multiplication of two matrix. [More here.](./functions/VECMATMatrix3/VECMATMatrix3Mult.md)
 
 ```C
 void VECMATMatrix3ScalarSum(VECMATMatrix3, VECMATMatrix3, float)

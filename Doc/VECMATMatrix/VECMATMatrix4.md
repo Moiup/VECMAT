@@ -39,7 +39,7 @@ Do the substraction of two matrix. [More here.](./functions/VECMATMatrix4/VECMAT
 ```C
 void VECMATMatrix4Mult(VECMATMatrix4, VECMATMatrix4, VECMATMatrix4)
 ```
-Do the multiplication of two matrix. [More here.](./functions/VECMATMatrix4/VECMATMatrix4Sub.md)
+Do the multiplication of two matrix. [More here.](./functions/VECMATMatrix4/VECMATMatrix4Mult.md)
 
 ```C
 void VECMATMatrix4ScalarSum(VECMATMatrix4, VECMATMatrix4, float)
