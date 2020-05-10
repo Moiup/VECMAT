@@ -57,6 +57,11 @@ void VECMATVector2Normalize(VECMATVector2 v);
 float VECMATVector2Length(VECMATVector2 v);
 
 /**
+ * Return the dot product between two vectors
+*/
+int VECMATVector2DotProduct(VECMATVector2 v1, VECMATVector2 v2)
+
+/**
  * Sum of two vectors (result in res)
  * 
  * If you don't want to store the result in a new vector, call the function like this :

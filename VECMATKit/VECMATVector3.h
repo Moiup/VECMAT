@@ -63,6 +63,11 @@ float VECMATVector3Length(VECMATVector3 v);
 void VECMATVector3CrossProduct(VECMATVector3 v1, VECMATVector3 v2, VECMATVector3 vn);
 
 /**
+ * Return the dot product between two vectors
+*/
+int VECMATVector3DotProduct(VECMATVector3 v1, VECMATVector3 v2);
+
+/**
  * Sum of two vectors (result in res)
  * 
  * If you don't want to store the result in a new vector, call the function like this :

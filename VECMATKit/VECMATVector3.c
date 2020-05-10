@@ -101,6 +101,14 @@ void VECMATVector3CrossProduct(VECMATVector3 v1, VECMATVector3 v2, VECMATVector3
 }
 
 /**
+ * Return the dot product between two vectors
+*/
+int VECMATVector3DotProduct(VECMATVector3 v1, VECMATVector3 v2)
+{
+    return v1[VEC3_X] * v2[VEC3_X] + v1[VEC3_Y] * v2[VEC3_Y] + v1[VEC3_Z] * v2[VEC3_Z];
+}
+
+/**
  * Sum of two vectors (result in res)
  * 
  * If you don't want to store the result in a new vector, call the function like this :
