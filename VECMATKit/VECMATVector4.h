@@ -43,6 +43,11 @@ void VECMATVector4Define(VECMATVector4 v, float x, float y, float z, float w);
 void VECMATVector4Create(float p1X, float p1Y, float p1Z, float p2X, float p2Y, float p2Z, float w, VECMATVector4 v);
 
 /**
+ * Copy a vector
+*/
+void VECMATVector4Copy(VECMATVector4 src, VECMATVector4 dest);
+
+/**
  * Create a homogeneous vec4 already normalized (result in `v`)
 */
 void VECMATVector4CreateNormalized(float p1X, float p1Y, float p1Z, float p2X, float p2Y, float p2Z, float w, VECMATVector4 v);

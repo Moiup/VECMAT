@@ -42,6 +42,11 @@ void VECMATVector2Define(VECMATVector2 v, float x, float y);
 void VECMATVector2Create(float p1X, float p1Y, float p2X, float p2Y, VECMATVector2 v);
 
 /**
+ * Copy a vector
+*/
+void VECMATVector2Copy(VECMATVector2 src, VECMATVector2 dest);
+
+/**
  * Create a vec2 already normalized (result in `v`)
 */
 void VECMATVector2CreateNormalized(float p1X, float p1Y, float p2X, float p2Y, VECMATVector2 v);

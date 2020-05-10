@@ -50,6 +50,17 @@ void VECMATVector4Create(float p1X, float p1Y, float p1Z, float p2X, float p2Y, 
 }
 
 /**
+ * Copy a vector
+*/
+void VECMATVector4Copy(VECMATVector4 src, VECMATVector4 dest)
+{
+    dest[VEC4_X] = src[VEC4_X];
+    dest[VEC4_Y] = src[VEC4_Y];
+    dest[VEC4_Z] = src[VEC4_Z];
+    dest[VEC4_W] = src[VEC4_W];
+}
+
+/**
  * Create a homogeneous vec4 already normalized (result in `v`)
 */
 void VECMATVector4CreateNormalized(float p1X, float p1Y, float p1Z, float p2X, float p2Y, float p2Z, float w, VECMATVector4 v)

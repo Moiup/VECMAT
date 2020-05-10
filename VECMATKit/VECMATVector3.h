@@ -43,6 +43,11 @@ void VECMATVector3Define(VECMATVector3 v, float x, float y, float z);
 void VECMATVector3Create(float p1X, float p1Y, float p1Z, float p2X, float p2Y, float p2Z, VECMATVector3 v);
 
 /**
+ * Copy a vector
+*/
+void VECMATVector3Copy(VECMATVector3 src, VECMATVector3 dest);
+
+/**
  * Create a vec3 already normalized (result in `v`)
 */
 void VECMATVector3CreateNormalized(float p1X, float p1Y, float p1Z, float p2X, float p2Y, float p2Z, VECMATVector3 v);
